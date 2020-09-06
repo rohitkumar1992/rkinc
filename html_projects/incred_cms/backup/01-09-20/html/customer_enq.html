@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incred</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Incred">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top_bar">
+            <nav class="navbar navbar-expand-md">
+              <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="top_navigation">
+                <h2>Incred Application Offer Management System</h2>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">View Transaction</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="customer_enq.html">Customer Enquiries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new_vendor_req.html">Vendor Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manage_iaoms.html">Manage IAOMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_management.html">Admin Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cms_settings.html">CMS Settings</a>
+                    </li>
+                    <li class="nav-item dropdown lin">
+                        <a class="nav-link dropdown-toggle" href="javascript:" id="navbardrop" data-toggle="dropdown">
+                            <span class="ic"><i class="far fa-user"></i></span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont_wrap style-5">
+		<div class="cont_ar">
+            <div class="top_r">
+                <div class="box">
+                    <h2>View Customer Inquiries</h2>
+                </div>
+                <div class="box r">
+                    <div class="status_l">
+                        <ul>
+                            <li class="active">
+                                <a href="javascript:">All</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:">Open</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:">Successful</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:">Fail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="searchbox">
+                        <form>
+                            <div class="inputbox">
+                                <input type="text" placeholder="customer history search" />
+                            </div>   
+                            <button type="submit" class="btn btn_default">Go</button>
+                            <button type="button" class="btn btn_default">Reset</button>
+                        </form>         
+                    </div>
+                </div>
+            </div>  
+            <div class="trans_cards cur_enq_card style-5">
+                <ul class="row">
+                    <li class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <div class="inv_para">
+                                <h3>Inquiry No: 234567</h3>
+                                <p>12/Oct/2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Incred Sales Agent: Rajesh Singh</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p><a href="javascript:">Category</a>-<a href="javascript:">Subcategory</a>-<a href="javascript:">Child-Category</a></p>
+                                <p><a href="javascript:">Vendor-Product Page</a></p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>DSOBS</p>
+                                <p><a href="javascript:">Nakul Sood</a>-610 Jaipur 1995</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Next Call Back</p>
+                                <p>12 Oct 2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="view_ar">
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#inquiry">View</button>
+                                <div class="status open">
+                                    <span>Open</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <div class="inv_para">
+                                <h3>Inquiry No: 234567</h3>
+                                <p>12/Oct/2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Incred Sales Agent: Rajesh Singh</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p><a href="javascript:">Category</a>-<a href="javascript:">Subcategory</a>-<a href="javascript:">Child-Category</a></p>
+                                <p><a href="javascript:">Vendor-Product Page</a></p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>DSOBS</p>
+                                <p><a href="javascript:">Nakul Sood</a>-610 Jaipur 1995</p> 
+                            </div>
+                            <div class="tl_inf">
+                                <p>Next Call Back</p>
+                                <p>12 Oct 2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="view_ar">
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#inquiry">View</button>
+                                <div class="status suc">
+                                    <span>Successful</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <div class="inv_para">
+                                <h3>Inquiry No: 234567</h3>
+                                <p>12/Oct/2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Incred Sales Agent: Rajesh Singh</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p><a href="javascript:">Category</a>-<a href="javascript:">Subcategory</a>-<a href="javascript:">Child-Category</a></p>
+                                <p><a href="javascript:">Vendor-Product Page</a></p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>DSOBS</p>
+                                <p><a href="javascript:">Nakul Sood</a>-610 Jaipur 1995</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Next Call Back</p>
+                                <p>12 Oct 2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="view_ar">
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#inquiry">View</button>
+                                <div class="status fail">
+                                    <span>Fail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 col-md-6">
+                        <div class="box">
+                            <div class="inv_para">
+                                <h3>Inquiry No: 234567</h3>
+                                <p>12/Oct/2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Incred Sales Agent: Rajesh Singh</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p><a href="javascript:">Category</a>-<a href="javascript:">Subcategory</a>-<a href="javascript:">Child-Category</a></p>
+                                <p><a href="javascript:">Vendor-Product Page</a></p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>DSOBS</p>
+                                <p><a href="javascript:">Nakul Sood</a>-610 Jaipur 1995</p>
+                            </div>
+                            <div class="tl_inf">
+                                <p>Next Call Back</p>
+                                <p>12 Oct 2020</p>
+                                <p>Time: 12:40</p>
+                            </div>
+                            <div class="view_ar">
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#inquiry">View</button>
+                                <div class="status suc">
+                                    <span>Successful</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="box l">
+            <ul class="f_links">
+                <li>
+                    <a href="javascript:">Contact</a>
+                </li>
+                <li>
+                    <a href="javascript:">Help</a>
+                </li>
+                <li>
+                    <a href="javascript:">Privacy & Terms</a>
+                </li>
+                <li>
+                    <a href="javascript:">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box r">
+            <p>Application Supported By <a href="javascript:">Incred Applications Pvt. Ltd.</a></p>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal" id="inquiry">
+        <div class="modal-dialog inquiry">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="cust_enq_v">
+                    <form>
+                        <div class="top_r">
+                            <div class="box">
+                                <div class="inv_para">
+                                    <h3>Inquiry No: 234567</h3>
+                                    <p>12/Oct/2020</p>
+                                    <p>Time: 12:40</p>
+                                </div>
+                                <div class="sorting">
+                                    <div class="field">
+                                        <label>Incred Sales Agent</label>
+                                        <div class="selectbox">
+                                            <select>
+                                                <option>Rajesh Singh</option>
+                                                <option>Rajesh Singh</option>
+                                                <option>Rajesh Singh</option>
+                                                <option>Rajesh Singh</option>
+                                                <option>Rajesh Singh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box r">
+                                <div class="nxt_call_back">
+                                    <div class="field">
+                                        <label>Next Call Back</label>
+                                        <div class="inputbox date">
+                                            <input id="datepicker1" type="text" />
+                                            <i class="fas fa-calendar-week"></i>
+                                        </div>
+                                        <div class="inputbox">
+                                            <input type="time" id="default-picker" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn_default">Logs</button>
+                            </div>
+                        </div>  
+                        <div class="enq_cont_box">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="box l">
+                                        <div class="tl_inf">
+                                            <p>Category-Subcategory-Child-Category-Vendor</p>
+                                            <p>Product Page - <a href="javascript:">Clickable Link</a></p>
+                                        </div>
+                                        <div class="tl_inf">
+                                            <p>DSOBS</p>
+                                            <p>Nakul Sood</p>
+                                            <p>610 Jaipur 1995</p>
+                                        </div>
+                                        <div class="tl_inf num">
+                                            <p>Phone Number <a href="tel:9868285855">9868285855</a></p>
+                                            <p>Email Id <a href="mailto:nakul610@gmail.com">nakul610@gmail.com</a></p>
+                                        </div>
+                                        <div class="cl_sts">
+                                            <div class="field">
+                                                <label>Total calls Made</label>
+                                                <button type="button" class="btn">7</button>
+                                            </div>
+                                            <div class="field">
+                                                <label>Transaction Status</label>
+                                                <div class="selectbox">
+                                                    <select>
+                                                        <option>Open</option>
+                                                        <option>Successful</option>
+                                                        <option>Fail</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Transaction Value</label>
+                                                <button type="button" class="btn">7</button>
+                                            </div>
+                                            <div class="field">
+                                                <label>Commission</label>
+                                                <button type="button" class="btn">7</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="box r">
+                                        <div class="vend_enq_l style-5">
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="1" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="2" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="3" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="4" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="5" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="6" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="7" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="8" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="inputbox">
+                                                    <input type="text" placeholder="9" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons text-right">
+                                            <button type="submit" class="btn btn_default">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

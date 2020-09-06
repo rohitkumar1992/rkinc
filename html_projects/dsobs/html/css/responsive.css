@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1400px) {
+  .container { max-width: 100%; width: 100%; }
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav { flex-direction: row; }
+  .login_ar form input, .login_ar form select { margin-bottom: 5px; }
+  .cont_ar { width: 100%; }
+  .filtr_drop .dropdown .dropdown-menu.b_d { width: 100%; }
+
+  .inner_wrap.style-5::-webkit-scrollbar { display: none; }
+  .cont_ar ul.nav-tabs.style-5::-webkit-scrollbar { display: none; }
+}
+@media only screen and (max-width: 500px) {
+  .side_btn_l { width: 100%; }
+  ul.navbar-nav li.nav-item.dropdown .dropdown-menu.b_d { width: 100%; }
+}

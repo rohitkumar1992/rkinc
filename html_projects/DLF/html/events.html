@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="t_bar">
+    	<h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+        <div class="top_r">
+            <div class="box l">
+                <button type="button" class="btn btn_brdr">Events</button>
+                <div class="d_t">
+                    <p id="currenttime"></p>
+                    <p>26/06/20</p>
+                </div>
+                <div class="date">
+                    <span>Date</span> <input type="text" id="datepicker" />
+                    <i class="fas fa-calendar-week"></i>
+                </div>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#addnewevent">Add New Event</button>
+            </div>
+            <div class="box r">
+                <button type="button" class="btn btn_default">Back</button>
+            </div>
+        </div>
+        <div class="cont_area event_area style-5">
+            <div class="eventbox">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box">
+                            <div class="place">
+                                <p class="place_ar">Asia India China</p>
+                                <div class="img">
+                                    <img src="images/events.jpg" alt="" />
+                                </div>
+                                <div class="ev_info">
+                                    <div class="bx">
+                                        <p>Sat 27 Jun 2020</p>
+                                        <p>18:30:00</p>
+                                    </div>
+                                    <div class="bx">
+                                        <p>Nature of Event Talks</p>
+                                        <p>Venue: Cru</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#editevent">Edit</button>
+                                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#event_place">List of Attendees</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modals-->
+    <div class="modal" id="event_place">
+        <div class="modal-dialog event_place">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="ttl_ar">
+                    <h3>Asia India China</h3>
+                    <p class="d">Sat 27 Jun 2020</p>
+                    <p class="pl">CRU</p>
+                </div>
+                <h4>List of Attendees</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Members</th>
+                                <th>Guests</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Angad Khanna</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Manu Bajaj</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Sumit Beniwal</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Nakul Sood 2</td>
+                                <td>Nakul Sood</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="buttons text-right">
+                    <button type="button" class="btn btn_default">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="addnewevent">
+        <div class="modal-dialog addevent">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <form>
+                    <div class="ttl_ar">
+                        <h3>Add A New Event</h3>
+                        <div class="field">
+                            <div class="inputbox upl_img">
+                                <label for="gig_upload">
+                                    <input type="file" id="gig_upload" />
+                                    <img src="" id="upload_img" alt="" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Title of Event</label>
+                                    <div class="inputbox">
+                                        <input type="text" placeholder="Title of Event" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Nature of Event</label>
+                                    <div class="selectbox">
+                                        <select>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Date</label>
+                                    <div class="inputbox date">
+                                        <input id="datepicker2" type="text" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Venue</label>
+                                    <div class="selectbox">
+                                        <select>
+                                            <option>Vanue</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Time</label>
+                                    <div class="inputbox">
+                                        <input type="time" id="default-picker1" />
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field">
+                                    <label>About the Event</label>
+                                    <div class="inputbox">
+                                        <textarea></textarea>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field checkbox">
+                                    <label for="memberonly">
+                                        Members only
+                                        <input type="checkbox" id="memberonly" />
+                                        <span><i class="fas fa-check"></i></span>
+                                    </label> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons text-right">
+                        <button type="submit" class="btn btn_default">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="editevent">
+        <div class="modal-dialog addevent">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <form>
+                    <div class="ttl_ar">
+                        <h3>Edit Event</h3>
+                        <div class="field">
+                            <div class="inputbox upl_img">
+                                <label for="acad_nomi_photo1">
+                                    <input type="file" id="acad_nomi_photo1" />
+                                    <img src="" id="acad_nomi_img1" alt="" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Title of Event</label>
+                                    <div class="inputbox">
+                                        <input type="text" placeholder="Title of Event" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Nature of Event</label>
+                                    <div class="selectbox">
+                                        <select>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Date</label>
+                                    <div class="inputbox date">
+                                        <input id="datepicker3" type="text" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Venue</label>
+                                    <div class="selectbox">
+                                        <select>
+                                            <option>Vanue</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                            <option>Nature of Event</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="field">
+                                    <label>Time</label>
+                                    <div class="inputbox">
+                                        <input type="time" id="default-picker2" />
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field">
+                                    <label>About the Event</label>
+                                    <div class="inputbox">
+                                        <textarea></textarea>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="field checkbox">
+                                    <label for="memberonly1">
+                                        Members only
+                                        <input type="checkbox" id="memberonly1" />
+                                        <span><i class="fas fa-check"></i></span>
+                                    </label> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons text-right">
+                        <button type="submit" class="btn btn_default">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

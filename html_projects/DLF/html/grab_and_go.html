@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="t_bar">
+    	<h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+		<div class="top_r">
+			<div class="box l">
+				<button type="button" class="btn btn_brdr">Grab and Go</button>
+				<div class="d_t">
+					<p id="currenttime"></p>
+					<p>26/06/20</p>
+				</div>
+				<div class="date">
+					<span>Date</span> <input type="text" id="datepicker" />
+                    <i class="fas fa-calendar-week"></i>
+				</div>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#editmenu">Edit Menu</button>
+                <button type="button" class="btn btn_default">Download Record</button>
+                <button type="button" class="btn btn_default">Activity Logs</button>
+			</div>
+			<div class="box r">
+				<button type="button" class="btn btn_default">Back</button>
+			</div>
+		</div>
+		<div class="cont_area grabgo style-5">
+            <div class="grab_go">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="box l">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" class="active" href="#tab1">Current Orders</a></li>
+                                <li><a data-toggle="tab" class="" href="#tab2">Completed Orders</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane fade in active style-5">
+                                    <ul class="card_list row">
+                                        <li class="col-md-6">
+                                            <div class="box">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="box">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="box cancel">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2" class="tab-pane fade style-5">
+                                    <ul class="card_list row">
+                                        <li class="col-md-6">
+                                            <div class="box">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="box">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-6">
+                                            <div class="box cancel">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Delivery Location: Hole 4 Tee</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box r">
+                            <div class="buttons text-right">
+                                <button type="button" class="btn btn_default">Cancel Order</button>
+                            </div>
+                            <div class="print_ar style-5">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="box">
+                                                <p>Order Time: 13.13</p>
+                                                <p>Expected Delivery Time: 13.13</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="box r">
+                                                <p>Date: 23/06/20</p>
+                                                <p>Member: Vikash Dharashoo</p>
+                                                <p>Membership No: 2345678</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Item No:</th>
+                                                <th>Description</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cust_note">
+                                    <p><span>Customer Note:</span> </p>
+                                </div>
+                            </div>
+                            <div class="buttons bot">
+                                <button class="btn btn_default" type="button">Print</button>
+                                <button class="btn btn_default btn_check" type="button">Order Completed <i class="fas fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="editmenu">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Edit Menu</h2>
+                <div class="book_form mang_trnr">
+                    <form>
+                        <div class="members_fld editmenutabs">
+                            <div class="manage_trnr_tabs">
+                                <ul class="nav nav-tabs" id="editlist">
+                                    <li class="active"><a data-toggle="tab" class="btn btn_default" href="#menu_tab1">Salads Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#menu_tab2">Fruits <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#menu_tab3">Sandwiches and Rolls <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#menu_tab4">Packaged items <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#menu_tab5">Drinks <i class="fas fa-check"></i></a></li>
+                                </ul>
+                                <div class="addmoretab">
+                                    <div class="inputbox addmangtrnr">
+                                        <input type="text" id="editmenuaddmore" />
+                                        <a onclick="addToList1()" id="addButton1" class="btn btn_default" href="JavaScript:">Add</a>
+                                    </div>
+                                    <a class="btn btn_default addmore" href="JavaScript:">Add More</a>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-content">
+                                <div id="menu_tab1" class="tab-pane fade in active">
+                                    <h3>Salads</h3>
+                                    <div class="table-responsive style-5">
+                                        <table class="table" id="editmenutable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Veg/Non Veg</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="selectbox">
+                                                                <select>
+                                                                    <option></option>
+                                                                    <option>Veg</option>
+                                                                    <option>Non Veg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="buttons text-right">
+                                        <button type="button" class="btn btn_default" id="addrow">Add More</button>
+                                    </div>
+                                </div>
+                                <div id="menu_tab2" class="tab-pane fade">
+                                    <h3>Fruits</h3>
+                                    <div class="table-responsive style-5">
+                                        <table class="table" id="editmenutable1">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Veg/Non Veg</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="selectbox">
+                                                                <select>
+                                                                    <option></option>
+                                                                    <option>Veg</option>
+                                                                    <option>Non Veg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="buttons text-right">
+                                        <button type="button" class="btn btn_default" id="addrow1">Add More</button>
+                                    </div>
+                                </div>
+                                <div id="menu_tab3" class="tab-pane fade">
+                                    <h3>Sandwiches and Rolls</h3>
+                                    <div class="table-responsive style-5">
+                                        <table class="table" id="editmenutable2">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Veg/Non Veg</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="selectbox">
+                                                                <select>
+                                                                    <option></option>
+                                                                    <option>Veg</option>
+                                                                    <option>Non Veg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="buttons text-right">
+                                        <button type="button" class="btn btn_default" id="addrow2">Add More</button>
+                                    </div>
+                                </div>
+                                <div id="menu_tab4" class="tab-pane fade">
+                                    <h3>Packaged items</h3>
+                                    <div class="table-responsive style-5">
+                                        <table class="table" id="editmenutable3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Veg/Non Veg</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="selectbox">
+                                                                <select>
+                                                                    <option></option>
+                                                                    <option>Veg</option>
+                                                                    <option>Non Veg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="buttons text-right">
+                                        <button type="button" class="btn btn_default" id="addrow3">Add More</button>
+                                    </div>
+                                </div>
+                                <div id="menu_tab5" class="tab-pane fade">
+                                    <h3>Drinks</h3>
+                                    <div class="table-responsive style-5">
+                                        <table class="table" id="editmenutable4">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item Name</th>
+                                                    <th>Veg/Non Veg</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="selectbox">
+                                                                <select>
+                                                                    <option></option>
+                                                                    <option>Veg</option>
+                                                                    <option>Non Veg</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="field">
+                                                            <div class="inputbox">
+                                                                <input type="text" />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="buttons text-right">
+                                        <button type="button" class="btn btn_default" id="addrow4">Add More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

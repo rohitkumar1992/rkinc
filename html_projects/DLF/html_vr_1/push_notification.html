@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="t_bar">
+    	<h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+		<div class="top_r">
+			<div class="box l">
+				<button type="button" class="btn btn_brdr">Push Notification</button>
+				<div class="d_t">
+					<p id="currenttime"></p>
+					<p>26/06/20</p>
+				</div>
+				<div class="date">
+					<span>Date</span> <input type="text" id="datepicker" />
+                    <i class="fas fa-calendar-week"></i>
+				</div>
+                <button type="button" class="btn btn_default">Activity Logs</button>
+			</div>
+			<div class="box r">
+				<button type="button" class="btn btn_default">Back</button>
+			</div>
+		</div>
+		<div class="cont_area pushnotif style-5">
+            <div class="pushnotify">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="box l">
+                            <div class="searchbox">
+                                <form>
+                                    <div class="inputbox">
+                                        <input type="text" placeholder="search" />
+                                    </div>   
+                                    <button type="submit" class="btn btn_default">Go</button>
+                                    <button type="button" class="btn btn_default">Reset</button>
+                                </form>         
+                            </div>
+                            <div class="push_slider style-5">
+                                <div class="owl-carousel">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="img">
+                                                <img src="" alt="" />
+                                            </div>
+                                            <div class="img_info">
+                                                <p>The New Golf magazine is  now live! click to read now!</p>
+                                                <p class="txt">Admin User: Nakul Sood</p>
+                                                <p class="txt">12/03/20-06:56 hrs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="img">
+                                                <img src="" alt="" />
+                                            </div>
+                                            <div class="img_info">
+                                                <p>The New Golf magazine is  now live! click to read now!</p>
+                                                <p class="txt">Admin User: Nakul Sood</p>
+                                                <p class="txt">12/03/20-06:56 hrs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="img">
+                                                <img src="" alt="" />
+                                            </div>
+                                            <div class="img_info">
+                                                <p>The New Golf magazine is  now live! click to read now!</p>
+                                                <p class="txt">Admin User: Nakul Sood</p>
+                                                <p class="txt">12/03/20-06:56 hrs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="img">
+                                                <img src="" alt="" />
+                                            </div>
+                                            <div class="img_info">
+                                                <p>The New Golf magazine is  now live! click to read now!</p>
+                                                <p class="txt">Admin User: Nakul Sood</p>
+                                                <p class="txt">12/03/20-06:56 hrs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="box r">
+                            <form>
+                                <div class="pushnot_box style-5">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <div class="field">
+                                                    <label>Enter Your Text -  Max 120 Characters</label>
+                                                    <div class="inputbox">
+                                                        <textarea class="style-5" maxlength="120"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="field upl">
+                                                    <label class="text-right">Attach Image</label>
+                                                    <div class="inputbox upl_img">
+                                                        <label for="gig_upload">
+                                                            <input type="file" id="gig_upload" />
+                                                            <img src="" id="upload_img" alt="" />
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <div class="selectbox">
+                                                        <select>
+                                                            <option>Select Click Thru Event</option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="field">
+                                                    <div class="inputbox date">
+                                                        <input placeholder="Date" id="datepicker2" type="text" />
+                                                        <i class="fas fa-calendar-week"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="field">
+                                                    <div class="inputbox">
+                                                        <input placeholder="Time" type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="radio_list">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>
+                                                        All Users
+                                                        <input type="radio" checked="checked" name="radio" />
+                                                        <span class="radiobtn"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>
+                                                        City, State Country
+                                                        <input type="radio" name="radio" />
+                                                        <span class="radiobtn"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputbox">
+                                                        <input type="text" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>
+                                                        Profession, Company
+                                                        <input type="radio" name="radio" />
+                                                        <span class="radiobtn"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputbox">
+                                                        <input type="text" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>
+                                                        Age, Gender
+                                                        <input type="radio" name="radio" />
+                                                        <span class="radiobtn"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputbox">
+                                                        <input type="text" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>
+                                                        Tags
+                                                        <input type="radio" name="radio" />
+                                                        <span class="radiobtn"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="inputbox">
+                                                        <input type="text" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="buttons bot text-right">
+                                        <button class="btn btn_default" type="submit">Push Notify</button>
+                                    </div>
+                                </div>                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">Videos</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+        <div class="videos">
+          <div class="search_nav_bar cmsad">
+            <div>
+              <input type="text" placeholder="Search.." class="form_control" />
+              <button type="button" class="btn btn-outline-primary ml10 btn-radius">Search</button>
+              <button type="button" class="btn btn-outline-secondry ml10 btn-radius">Reset</button>
+              <a href="javascript:" class="btn cr_btn btn_default" data-toggle="modal" data-target="#myModal1">Create Video</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4 mb-4">
+              <p class="line-clamp-two">Video Title</p>
+              <div class="image-style">
+                <img src="images/imagesize16_9.png" class="img-fluid w100p" alt="No image found" />
+              </div>
+              <button type="button" class="btn btn-info ml-auto mr-auto w100 mt-2" data-toggle="modal" data-target="#myModal1">Edit</button>
+            </div>
+            <div class="col-4 mb-4">
+              <p class="line-clamp-two">Video Title</p>
+              <div class="image-style">
+                <img src="images/imagesize16_9.png" class="img-fluid w100p" alt="No image found" />
+              </div>
+              <button type="button" class="btn btn-info ml-auto mr-auto w100 mt-2" data-toggle="modal" data-target="#myModal1">Edit</button>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create Video</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-2 mt-4">
+                      <h5 for="videotitle">Title of Video</h5>
+                    </div>
+                    <div class="col-4 c_s">
+                      <input type="text" id="videotitle" placeholder="Enter video title" class="form_control" />
+                    </div>
+                    <div class="col-3">
+                      <div class="">
+                        <label for="videotitle" class="labelstyle m-0">Video type</label>
+                        <select class="form_control">
+                          <option>Select</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-4">
+                    <div class="col-md-4">
+                      <label for="videourl" class="labelstyle">Main Video URL</label>
+                      <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+
+                      <label for="about" class="labelstyle">About</label>
+                      <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="members_fld">
+                        <ul class="nav nav-tabs">
+                            <li><a data-toggle="tab" class="btn btn_default active" href="#tab1">Video1 <i class="fas fa-check"></i></a></li>
+                            <li><a data-toggle="tab" class="btn btn_default" href="#tab2">Video2 <i class="fas fa-check"></i></a></li>
+                            <li><a data-toggle="tab" class="btn btn_default" href="#tab3">Video3 <i class="fas fa-check"></i></a></li>
+                            <li><a data-toggle="tab" class="btn btn_default" href="#tab4">Video4 <i class="fas fa-check"></i></a></li>
+                            <li><a data-toggle="tab" class="btn btn_default" href="#tab5">Video5 <i class="fas fa-check"></i></a></li>
+                            <li><a data-toggle="tab" class="btn btn_default" href="#tab6">Video6 <i class="fas fa-check"></i></a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div id="tab1" class="tab-pane fade in active">
+                              <label for="videourl" class="labelstyle">Video 1 URL</label>
+                              <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                              <label for="about" class="labelstyle">About</label>
+                              <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                          <div id="tab2" class="tab-pane fade">
+                              <label for="videourl" class="labelstyle">Video 2 URL</label>
+                              <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                              <label for="about" class="labelstyle">About</label>
+                              <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                          <div id="tab3" class="tab-pane fade">
+                            <label for="videourl" class="labelstyle">Video 3 URL</label>
+                            <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                            <label for="about" class="labelstyle">About</label>
+                            <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                          <div id="tab4" class="tab-pane fade">
+                              <label for="videourl" class="labelstyle">Video 4 URL</label>
+                              <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                              <label for="about" class="labelstyle">About</label>
+                              <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                          <div id="tab5" class="tab-pane fade">
+                              <label for="videourl" class="labelstyle">Video 5 URL</label>
+                              <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                              <label for="about" class="labelstyle">About</label>
+                              <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                          <div id="tab6" class="tab-pane fade">
+                              <label for="videourl" class="labelstyle">Video 6 URL</label>
+                              <input type="url" id="videourl" name="videourl" placeholder="Enter Main Video URL.." class="form_control" />
+
+                              <label for="about" class="labelstyle">About</label>
+                              <textarea class="form_control" rows="5" id="about" placeholder="Enter About.."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons w100p text-right">
+                        <button type="button" class="btn btn_default">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger w150">Delete</button>
+                  <button type="button" class="btn btn-primary w150">Update Video</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Edit Videos</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fab fa-facebook"></i></span>
+                    </div>
+                    <input type="url" name="fbLink" placeholder="Enter the Facebook URL" class="form-control" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fab fa-twitter"></i></span>
+                    </div>
+                    <input type="url" name="twLink" placeholder="Enter the Twitter URL" class="form-control" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fab fa-instagram"></i></span>
+                    </div>
+                    <input type="url" name="instaLink" placeholder="Enter the Instagram URL" class="form-control" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-link"></i></span>
+                    </div>
+                    <input type="url" name="otherLink" placeholder="Enter the other URL" class="form-control" />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary w150">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">Edit Detailed Profile</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+
+        <div class="editProfile edit-basic event_from">
+          <form>
+            <div class="mb10 tabing">
+              <ul class="nav nav-tabs tab-bar horizontal style-5">
+                <li><a data-toggle="tab" class="btn btn_default active" href="#acad_tab1">Contact Details</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab2">About Me</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab3">Photos/Media</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab4">Social/Links</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab5">Professional Details</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab6">Tags</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab7">Education/Training</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab8">Awards/Distinctions</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab9">Relatives In School</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab10">My Family</a></li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div id="acad_tab1" class="tab-pane fade in active">
+                <div class="row mt15">
+                  <div class="col-md-6">
+                    <!-- <label for="phone" class="labelstyle">Primary Phone Number</label>
+                    <input type="number" id="phone" name="phone" placeholder="Enter Phone Number Here" class="form_control" /> -->
+                    <div class="cd-label">
+                      <label class="labelstyle">Show My Phone Detail to</label>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Batch Only </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Everyone </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />No One </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <label for="pemail" class="labelstyle">Primary Email ID</label>
+                    <input type="Test" id="pemail" name="pemail" placeholder="Enter Email ID Here" class="form_control" /> -->
+                    <div class="cd-label">
+                      <label class="labelstyle">Show My Email Detail to</label>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Batch Only </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Everyone </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />No One </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt15">
+                  <div class="col-md-6">
+                    <!-- <label for="secPhone" class="labelstyle">Secondary Phone Number</label>
+                    <input type="number" id="secPhone" name="secPhone" placeholder="Enter Phone Number Here" class="form_control" /> -->
+                    <div class="cd-label">
+                      <label class="labelstyle">Show My Phone Detail to</label>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Batch Only </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Everyone </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />No One </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <!-- <label for="secEmail" class="labelstyle">Secondary Email ID</label>
+                    <input type="Test" id="secEmail" name="secEmail" placeholder="Enter Email ID Here" class="form_control" /> -->
+                    <div class="cd-label">
+                      <label class="labelstyle">Show My Email Detail to</label>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Batch Only </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Everyone </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />No One </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab2" class="tab-pane fade">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="aboutMe">About Me</label>
+                      <textarea class="form_control" rows="5" id="aboutMe" placeholder="Write Your Intro Here.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="memories">Memories of School</label>
+                      <textarea class="form_control" rows="5" id="memories" placeholder="Write about some of your memories of School"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="philosophy">Personal/Professional Philosophy</label>
+                      <textarea class="form_control" rows="5" id="philosophy" placeholder="Write your personalphilosophy"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="hobbies">Hobbies Interests Tags</label>
+                      <textarea class="form_control" rows="5" id="hobbies" placeholder="Write your hobbies interests tags.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="favMusic">Favourite Musican / Groups</label>
+                      <textarea class="form_control" rows="5" id="favMusic" placeholder="Write your Favourite Musican / Groups.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="favMovies">Favourite Movies</label>
+                      <textarea class="form_control" rows="5" id="favMovies" placeholder="Write your Favourite Movies.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="favbook">Favourite Book</label>
+                      <textarea class="form_control" rows="5" id="favbook" placeholder="Write your Favourite Book.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="favPeople">People I Look Up To</label>
+                      <textarea class="form_control" rows="5" id="favPeople" placeholder="Write your Favourite Pepoles.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="philanthropy">Philanthorpy</label>
+                      <textarea class="form_control" rows="5" id="philanthropy" placeholder="Write your Favourite philanthopy.."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="sportTeam">Sports Teams I Support</label>
+                      <textarea class="form_control" rows="5" id="sportTeam" placeholder="Write your favourite sports team.."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab3" class="tab-pane fade">
+                <div class="media-container userdetailphotomedia">
+                  <div class="row">
+                    <div class="col-3">
+                      <h5 class="labelstyle">Batch Upload Image Directly From:</h5>
+                    </div>
+                    <div class="col-9">
+                      <button type="button" class="btn btn-info"><i class="fa fa-upload mr10"></i>Upload-Phone/Laptop</button>
+                      <button type="button" class="btn btn-info ml10" id="uploadVideo"><i class="fab fa-youtube mr10"></i>Upload Video</button>
+                      <button type="button" class="btn btn-info ml10"><i class="fas fa-file-upload mr10"></i>Upload Documents</button>
+                      <p class="drag">Drag and Drop</p>
+                    </div>
+                  </div>
+
+                  <div class="row no-gutters" id="uploadVideoDiv">
+                    <div class="col-md-6 mt25 d-flex">
+                      <input type="url" class="form_control" name='video' placeholder="Paste Your Youtube, Vimeo, Soundcloud URL" />
+                      <button type="button" class="btn btn-info ml10 w100">Add</button>
+                    </div>
+                  </div>
+
+                  <div class="medialist">
+                      <div class='video-frame-maxwidth mediaVideothumb'>
+                        <div>
+                          <div class="image-style top cursor">
+                            <img src='images/imagesize16_9.png' class="w100p img-fluid" alt="" />
+                          </div>
+                          <div class="icon i_close i_close_aligntop"></div>
+                        </div>
+                      </div>
+                       
+                    <div class='video-frame-maxwidth mediaVideothumb'>
+                      <div>
+                        <span class="playicon"><i class="fa fa-play-circle" aria-hidden="true"></i></span>
+                        <div class="image-style top cursor">
+                          <img src='images/imagesize16_9.png' class="w100p img-fluid" alt="" />
+                        </div>
+                        <div class="icon i_close i_close_aligntop"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab4" class="tab-pane fade">
+                <div>
+                  <div class="row social-i-color">
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-facebook fb-color"></i></span>
+                        </div>
+                        <input type="url" name="fbLink" placeholder="Enter the Facebook URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-linkedin ln-color"></i></span>
+                        </div>
+                        <input type="url" name="linkedin" placeholder="Enter the Linkedin URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-instagram insta-color"></i></span>
+                        </div>
+                        <input type="url" name="instaLink" placeholder="Enter the Instagram URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-youtube youtube-color"></i></span>
+                        </div>
+                        <input type="url" name="youtubeLink" placeholder="Enter the Youtube URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-twitter twitter-color"></i></span>
+                        </div>
+                        <input type="url" name="twLink" placeholder="Enter the Twitter URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-wikipedia-w wiki-color"></i></span>
+                        </div>
+                        <input type="url" name="wikiLink" placeholder="Enter the Wiki URL" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-whatsapp whatsap-color"></i></span>
+                        </div>
+                        <input type="number" name="whatsappNo" placeholder="Enter the Whatsapp no." class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mt-3">
+                        <label class="labelstyle" for="link">Add Your Links</label>
+                        <input type="text" name="wikiLink" id="link" placeholder="Paste Your Link Here" class="form_control" />
+                      </div>
+                      <div class="mt10">
+                        <input class="form_control" type="texy" name="aboutLink" id="aboutLink" placeholder="About Your Link" />
+                      </div>
+                      <div class="mt-3">
+                        <div class="btn btn-info w150 ml-auto">ADD THIS LINK</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mt-3">
+                        <label>MY LINKS</label>
+                      </div>
+                      <div class="workcred-scroll">
+                        <div class="row links-txt mb10">
+                          <div class="col">
+                            <div>link</div>
+                            <p>About Link</p>
+                          </div>
+                        </div>
+                        <div class="col btn-actions">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab5" class="tab-pane fade">
+                <div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <input type="text" name="company" placeholder="Company Name(Requared).." class="form_control" />
+                    </div>
+                    <div class="col-4">
+                      <input type="text" name="businessSector" placeholder="Sector of business.." class="form_control" />
+                    </div>
+                    <div class="col-4">
+                      <input type="text" name="obs" placeholder="Secondary Sector of business.." class="form_control" />
+                    </div>
+                  </div>
+                  <div class="cd-label">
+                    <label class="labelstyle">Open To Mentoring</label>
+                    <div class="form-check-inline">
+                      <label class="labelstyle"> <input type="radio" class="form-check-input" name="mentoring" />No </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="labelstyle"> <input type="radio" class="form-check-input" name="mentoring" />Yes </label>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <input type="text" name="role" placeholder="Enter Past Work Experience" class="form_control" />
+                    </div>
+                    <div class="col-6">
+                      <input type="text" name="companyName" placeholder="Name of Company." class="form_control" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <div class="d-flex">
+                        <select class="form_control" id="fromYear">
+                          <option>from</option>
+                          <option>2000</option>
+                          <option>2001</option>
+                          <option>2002</option>
+                          <option>2003</option>
+                        </select>
+                        <div class="ml10 w100p">
+                          <select class="form_control" id="toYear">
+                            <option>To</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                      <button type="button" class="btn btn-info">Add This Experience</button>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <label>Past Work Experience</label>
+                  </div>
+                  <div class="workcred-scroll">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Role</p>
+                          <p>Company Name</p>
+                          <p>2017 - 2020</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Role</p>
+                          <p>Company Name</p>
+                          <p>2017 - 2020</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Role</p>
+                          <p>Company Name</p>
+                          <p>2017 - 2020</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab6" class="tab-pane fade">
+                <div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label class="labelstyle">Add Your Tags</label>
+                      <div class="d-flex">
+                        <input type="text" placeholder="Add Tag." class="form_control" required='true' />
+                        <button type="button" class="btn btn-info w150 ml10">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-md-6">
+                      <span class="styletag">tag 1<span class="pclose"> + </span></span>
+                      <span class="styletag">tag 2<span class="pclose"> + </span></span>
+
+                      <div class="d-flex flex-wrap mt-2">
+                        <div class="tag_style">School Cricket team</div>
+                        <div class="tag_style">Football team</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab7" class="tab-pane fade">
+                <div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <input type="text" name="name" placeholder="Name of Institute" class="form_control" />
+                    </div>
+                    <div class="col-6">
+                      <input type="text" name="type" placeholder="Nature of Training." class="form_control" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <label class="labelstyle">Duration</label>
+                      <div class="d-flex align-items-end">
+                        <input type="number" name="daysCount" placeholder="Number of" class="form_control" />
+                        <div class="ml10 w100p">
+                          <select class="form_control" id="daysUnit">
+                            <option>Select Unit</option>
+                            <option>Years</option>
+                            <option>Months</option>
+                            <option>Weeks</option>
+                            <option>Days</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <label class="labelstyle">Years of Training</label>
+                      <select class="form_control" id="year">
+                        <option>Select Years</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                      </select>
+                    </div>
+                    <div class="col mt-4">
+                      <button type="button" class="btn btn-info ml-auto">Add This Tranning</button>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <label>MY TRAININGS</label>
+                  </div>
+                  <div class="workcred-scroll">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name Of Institute</p>
+                          <p>Nature of Training</p>
+                          <p>3 Years, 2010</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name Of Institute</p>
+                          <p>Nature of Training</p>
+                          <p>3 Years, 2010</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name Of Institute</p>
+                          <p>Nature of Training</p>
+                          <p>3 Years, 2010</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab8" class="tab-pane fade">
+                <div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="cd-label">
+                        <label class="labelstyle">Award Place</label>
+                        <div class="form-check-inline">
+                          <label class="labelstyle"> <input type="radio" class="form-check-input" name="awardPlace" />In School </label>
+                        </div>
+                        <div class="form-check-inline">
+                          <label class="labelstyle"> <input type="radio" class="form-check-input" name="awardPlace" />After School </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <input type="text" name="name" placeholder="Award name" class="form_control" />
+                    </div>
+                    <div class="col-6">
+                      <input type="text" name="type" placeholder="Category of Awards" class="form_control" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <select class="form_control" id="year">
+                        <option>Select Years</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                      </select>
+                    </div>
+                    <div class="col mt-4">
+                      <button type="button" class="btn btn-info ml-auto">Add This Awards</button>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <label>MY AWARDS</label>
+                  </div>
+                  <div class="workcred-scroll">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Type</p>
+                          <p>Year</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Type</p>
+                          <p>Year</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Type</p>
+                          <p>Year</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab9" class="tab-pane fade">
+                <div>
+                  <div class="row">
+                    <div class="col">
+                      <label class="labelstyle">Name of Relative</label>
+                      <input type="text" name="rname" placeholder="Name of Relative" class="form_control" />
+                    </div>
+                    <div class="col">
+                      <label class="labelstyle">Nature of Relationship</label>
+                      <input type="text" name="rNature" placeholder="Nature of Relationship" class="form_control" />
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <button type="button" class="btn btn-info w100 ml-auto">Add</button>
+                  </div>
+
+                  <div class="mt-4">
+                    <label>MY RELATIVES</label>
+                  </div>
+                  <div class="workcred-scroll">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Nature</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Nature</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Name</p>
+                          <p>Nature</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab10" class="tab-pane fade">
+                <div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <label class="labelstyle">Relationship Status</label>
+                      <select class="form_control" id="relationshipStatus">
+                        <option>Select Relationship Status</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label class="labelstyle">Father Name</label>
+                      <input type="text" name="father" placeholder="Enter your father name." class="form_control" />
+                    </div>
+                    <div class="col-4">
+                      <label class="labelstyle">Mother Name</label>
+                      <input type="text" name="mother" placeholder="Enter your Mother name." class="form_control" />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-4">
+                      <label class="labelstyle">Spouse Name</label>
+                      <input type="text" name="spouseName" placeholder="Spouse Name" class="form_control" />
+                    </div>
+                    <div class="col-4">
+                      <label class="labelstyle">Spouse Photo</label>
+                      <input type="text" name="spousePhoto" multiple="true" readonly="true" placeholder="Upload Photo" class="form_control" />
+                    </div>
+                    <div class="col-4">
+                      <label class="labelstyle">Anniversary</label>
+                      <input type="date" name="dom" placeholder="Date of Marriage" class="form_control" />
+                    </div>
+                  </div>
+
+                  <div class="row mt-3">
+                    <div class="col-3">
+                      <label class="labelstyle">Child's Name</label>
+                      <input type="text" name="childName" placeholder="Child's Name" class="form_control" />
+                    </div>
+                    <div class="col-3">
+                      <label class="labelstyle">Child's Photo</label>
+                      <input type="text" name="image" multiple="true" readonly="true" placeholder="Upload Photo" class="form_control" />
+                    </div>
+                    <div class="col-3">
+                      <label class="labelstyle">Date of Birth</label>
+                      <input type="date" name="dob" placeholder="Date of Birth" class="form_control" />
+                    </div>
+                    <div class="col-3 mt-1">
+                      <label class="labelstyle">Gender</label>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="awardPlace" />Male </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="radio" class="form-check-input" name="awardPlace" />Female </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <button type="button" class="btn btn-info ml-auto">Add Child</button>
+                  </div>
+
+                  <div class="mt-4">
+                    <label>Children</label>
+                  </div>
+                  <div class="workcred-scroll">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Child's Name</p>
+                          <p>DOB</p>
+                          <p>Gender</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Child's Name</p>
+                          <p>DOB</p>
+                          <p>Gender</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb10">
+                          <p>Child's Name</p>
+                          <p>DOB</p>
+                          <p>Gender</p>
+                        </div>
+                        <div class="btn-actions pwe">
+                          <button type="button" class="btn btn-danger">Delete</button>
+                          <button type="button" class="btn btn-secondary ml10">Edit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="progress-bar-pos">
+                <div class="prgrs-bar-container">
+                  <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 10%;">10%</div>
+                  </div>
+                  <div class="d-flex">
+                    <button type="button" class="btn btn-info">Previous</button>
+                    <button type="button" class="btn btn-info btn_s_n">Save and Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+  </body>
+</html>

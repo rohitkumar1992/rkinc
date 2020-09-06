@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />  
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">User Details</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+        <div>
+          <form class="edit-basic creatuserbasic" autocomplete="off">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="field" data-toggle="modal" data-target="#photocropper">
+                        <div class="inputbox upl_img">
+                            <label for="gig_upload">
+                                <input type="file" id="gig_upload" />
+                                <span class="img"><img src="" id="upload_img" alt="" /></span>
+                                <span class="btn btn_default mt10">Browse Image</span>
+                            </label>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label">My Name is...</p>
+                    <div class="field">
+                      <div class="row cruserprefix">
+                        <div class="col-4">
+                          <label for="prefix" class="labelstyle">Prefix</label>
+                          <input type="text" id="prefix" name="prefix" placeholder="Prefix" class="form_control" />
+                        </div>
+                        <div class="col-8">
+                          <label for="petName" class="labelstyle">Pet Name</label>
+                          <input type="text" id="petName" name="petName" placeholder="Pet Name" class="form_control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label for="fname" class="labelstyle">First Name<span class="color-red">*</span></label>
+                      <input type="text" id="fname" name="fname" placeholder="First Name" class="form_control" />
+                    </div>
+                    <div class="field">
+                      <label for="lname" class="labelstyle">Middle and Last Name<span class="color-red">*</span></label>
+                      <input type="text" id="lname" name="lastName" placeholder="Middle and Last Name" class="form_control" />
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label">School Details..</p>
+                    <div class="field">
+                      <label for="batch" class="labelstyle">Batch<span class="color-red">*</span></label>
+                      <select class="form_control" id="batch">
+                        <option>Select Batch</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="schoolNo" class="labelstyle">School Number<span class="color-red">*</span></label>
+                      <select class="form_control" id="schoolNo">
+                        <option>School Number</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="house" class="labelstyle">House</label>
+                      <select class="form_control" id="house">
+                        <option>Select House</option>
+                        <option>Jaipur</option>
+                        <option>Hyderabad</option>
+                        <option>Kashmir</option>
+                        <option>Tata</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label">Personal Details...</p>
+                    <div class="field">
+                      <label for="dob" class="labelstyle">Date of Birth</label>
+                      <input type="date" id="dob" name="dob" placeholder="DOB" class="form_control" />
+                    </div>
+                    <div class="field">
+                      <label for="bloodGroup" class="labelstyle">Blood Group</label>
+                      <select class="form_control" id="bloodGroup">
+                        <option>Select</option>
+                        <option>A</option>
+                        <option>A+</option>
+                        <option>B</option>
+                        <option>B+</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <div class="row no-gutters pl5">
+                        <div class="col-7">
+                          <label class="labelstyle">Gender</label>
+                          <div class="form-check-inline">
+                            <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Male </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio" />Female </label>
+                          </div>
+                        </div>
+                        <div class="col-5 mt25">
+                          <div class="form-check-inline">
+                            <label class="labelstyle"> <input type="checkbox" class="form-check-input" value="" />LGBTIQ </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <p class="section-label mt10">Contact Details...</p>
+                    <div class="field">
+                      <div class="row cruserprefix">
+                        <div class="col-4">
+                          <label for="cCode" class="labelstyle">Ctry Code<span class="color-red">*</span></label>
+                          <select class="form_control" id="cCode">
+                            <option>Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div>
+                        <div class="col-8">
+                          <label for="phone" class="labelstyle">Primary Phone<span class="color-red">*</span></label>
+                          <input type="number" id="phone" name="phone" placeholder="Primary Phone number" class="form_control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="row cruserprefix">
+                        <div class="col-4">
+                          <label for="secCountryCode" class="labelstyle">Ctry Code</label>
+                          <select class="form_control" id="secCountryCode">
+                            <option>Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div>
+                        <div class="col-8">
+                          <label for="secPhone" class="labelstyle">Secondary Phone</label>
+                          <input type="number" id="secPhone" name="secPhone" placeholder="Secondary Phone number" class="form_control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label for="pemail" class="labelstyle">Primary Email id<span class="color-red">*</span></label>
+                      <input type="text" id="pemail" name="Email" placeholder="yourname@example.com" class="form_control" />
+                    </div>
+                    <div class="field">
+                      <label for="semail" class="labelstyle">Secondary Email id</label>
+                      <input type="text" id="semail" name="Email" placeholder="yourname@example.com" class="form_control" />
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label mt10">Current professional Details...</p>
+                    <div class="field">
+                      <label for="prfsn" class="labelstyle">Profession</label>
+                      <input type="text" id="prfsn" name="profession" placeholder="Select Profession" class="form_control" disabled />
+                    </div>
+                    <div class="field">
+                      <label for="designation" class="labelstyle">Designation</label>
+                      <input type="text" id="designation" name="designation" placeholder="Enter your designation" class="form_control" />
+                    </div>
+                    <div class="field">
+                      <label for="cmpny" class="labelstyle">Company</label>
+                      <input type="text" id="cmpny" name="company" placeholder="Enter your comapny" class="form_control" />
+                    </div>
+                    <div class="field">
+                      <label for="linkedin" class="labelstyle">LinkedIn URL</label>
+                      <input type="url" id="linkedin" name="linkedin" placeholder="Enter your linkedin url" class="form_control" />
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label mt10">Current Location Details...</p>
+                    <div class="field">
+                      <label for="country" class="labelstyle">Country</label>
+                      <select class="form_control" id="country">
+                        <option>US</option>
+                        <option>India</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="state" class="labelstyle">State</label>
+                      <select class="form_control" id="state">
+                        <option>New York</option>
+                        <option>Maharastra</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="city" class="labelstyle">City</label>
+                      <select class="form_control" id="city">
+                        <option>Westbury</option>
+                        <option>Mumbai</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="pinCode" class="labelstyle">Zip</label>
+                      <input type="number" id="pinCode" name="pinCode" placeholder="Zip" class="form_control" />
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <p class="section-label mt10">Current Address Details...</p>
+                    <div class="form-group">
+                      <label for="pAddress">Permanent Address</label>
+                      <textarea class="form_control" rows="5" id="pAddress" placeholder="permanent address"></textarea>
+
+                      <div class="form-check-inline">
+                        <label class="labelstyle"> <input type="checkbox" class="form-check-input" value="" />Same Address </label>
+                      </div>
+                    </div>
+                    <div class="mt15 form-group">
+                      <label for="cAddress">Correspondence Address</label>
+                      <textarea class="form_control" rows="5" id="cAddress" placeholder="correspondence Address"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-right d-flex justify-content-end mt25">
+              <a href="user_manage.html" class="btn back btn-default w100 mr10">Back</a>
+              <button type="button" class="btn btn-danger w100 mr10">Delete</button>
+              <button type="button" class="btn btn-info w100">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+
+    <div class="modal fade" id="photocropper">
+      <div class="modal-dialog modal-lg photocropper">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Alumbus Photo Uploader</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <section class="slider row">
+                <div class="col-md-4">
+                  <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                      <li>
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload2">
+                              <input type="file" id="gig_upload2" />
+                              <span class="img"><span class="ttl">Photo 1</span> <img src="" id="upload_img2" alt="" /></span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload">
+                              <input type="file" id="gig_upload" />
+                              <span class="img"><span class="ttl">Photo 2</span> <img src="" id="upload_img" alt="" /></span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload">
+                              <input type="file" id="gig_upload" />
+                              <span class="img"><span class="ttl">Photo 3</span> <img src="" id="upload_img" alt="" /></span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload">
+                              <input type="file" id="gig_upload" />
+                              <span class="img"><span class="ttl">Photo 4</span> <img src="" id="upload_img" alt="" /></span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div id="slider" class="flexslider">
+                    <ul class="slides">
+                      <li>
+                        <div class="box">
+                          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box">
+                          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <div class="row">
+                <div class="col-md-4">
+                  
+                </div>
+                <div class="col-md-8">
+                  <div class="buttons c_btns">
+                    <button type="button" class="btn btn_default">As Is</button>
+                    <button type="button" class="btn btn_default">Landscape</button>
+                    <button type="button" class="btn btn_default">Portrait</button>
+                    <button type="button" class="btn btn_default">Square</button>
+                  </div>
+                  <div class="tags">
+                    <div class="row">
+                      <div class="col-md-10">
+                        <div class="field">
+                          <div class="inputbox">
+                            <input type="text" placeholder="Add Tag" class="form_control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="buttons text-right">
+                          <button type="button" class="btn btn_default">Tag</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

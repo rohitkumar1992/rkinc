@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">Create Magazine</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+        <div class="editIssue">
+          <form>
+            <div class="tabing">
+              <ul class="nav nav-tabs issueTab horizontal style-5">
+                <li><a data-toggle="tab" class="active" href="#acad_tab1">NEW ISSUE/COVER</a></li>
+                <li><a data-toggle="tab" class="" href="#acad_tab2">TABLE OF CONTENTS</a></li>
+                <li><a data-toggle="tab" class="" href="#acad_tab3">ARTICLES</a></li>
+              </ul>
+              <button type="button" class="btn back btn_default">Back</button>
+            </div>
+
+            <div class="tab-content">
+              <div id="acad_tab1" class="tab-pane fade in active">
+                <div class="newIssue cover">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="row">
+                        <div class="col-6">
+                          <select class="form_control" id="issueMonth">
+                            <option>Select Month</option>
+                            <option>Jan</option>
+                            <option>Fed</option>
+                            <option>Mar</option>
+                            <option>April</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form_control" id="issueYear">
+                            <option>Select year</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <button type="button" class="btn btn-info w100p mt10" data-toggle="modal" data-target="#myModal1">The editorial board</button>
+                        </div>
+                        <div class="col-md-6">
+                          <button type="button" class="btn btn-info w100p mt10" data-toggle="modal" data-target="#myModal2">Contact the editor</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="inputbox upl_img">
+                        <label for="gig_upload">
+                            <input type="file" id="gig_upload">
+                            <span class="img"><span>Magazine Cover</span><img src="" id="upload_img" alt=""></span>
+                            <span class="btn btn_default w100p mt10">Upload Cover</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="inputbox upl_img">
+                        <label for="gig_upload1">
+                            <input type="file" id="gig_upload1">
+                            <span class="img"><span id="pdfname">Upload PDF</span></span>
+                            <span class="btn btn_default w100p mt10">View</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab2" class="tab-pane fade">
+                <div class="newIssue toc">
+                  <button type="button" class="btn btn-info w100 ml-auto mb-3">Add More</button>
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="inputbox upl_img">
+                            <label for="gig_upload2">
+                                <input type="file" id="gig_upload2">
+                                <span class="img"><span>Upload Banner Image</span><img src="" id="upload_img2" alt=""></span>
+                                <span class="btn btn_default w100p mt10">Upload Banner</span>
+                            </label>
+                          </div>
+                      </div>
+                      <div class="col-6">
+                          <p class="mb10">Table of Contents</p>
+                          <div class="section-scroll">
+                              <input type="text" name="section" class="form_control" placeholder="section 1" />
+                              <input type="text" name="section" class="form_control" placeholder="section 2" />
+                              <input type="text" name="section" class="form_control" placeholder="section 3" />
+                              <input type="text" name="section" class="form_control" placeholder="section 4" />
+                              <input type="text" name="section" class="form_control" placeholder="section 5" />
+                              <input type="text" name="section" class="form_control" placeholder="section 6" />
+                              <input type="text" name="section" class="form_control" placeholder="section 7" />
+                              <input type="text" name="section" class="form_control" placeholder="section 8" />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab3" class="tab-pane fade">
+                <div class="newIssue">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="#" class="add-artical" data-toggle="modal" data-target="#addartical">Add a new article</a>
+                      <div class='section-scroll'>
+                        <button type="button" class="btn btn-primary w100p mb-2">Section</button>
+                        <button type="button" class="btn btn-secondary w100p mb-2">Section</button>
+                        <button type="button" class="btn btn-secondary w100p mb-2">Section</button>
+                        <button type="button" class="btn btn-secondary w100p mb-2">Section</button>
+                        <button type="button" class="btn btn-secondary w100p mb-2">Section</button>
+                        <button type="button" class="btn btn-secondary w100p mb-2">Section</button>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="row article-scroll">
+                          <div class="col-8">
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                              <div class='article'>
+                                <p class="line-clamp-one">Title</p>
+                                <p class='sub-title'>Sub Title</p>
+                              </div>
+                            </a>
+                            <a href="#" data-toggle="modal" data-target="#myModal1">
+                              <div class='article'>
+                                <p class="line-clamp-one">Title</p>
+                                <p class='sub-title'>Sub Title</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="save-btn">
+              <button type="submit" class="btn btn-info w150">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+
+
+    <div class="modal fade eventModal add_artical_modal" id="addartical">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add An Article</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-4">
+                <input type="text" name="title" placeholder="Title of Article" class="form_control" />
+              </div>
+              <div class="col-4">
+                <input type="text" name="subtitle" placeholder="Sub Title of Article" class="form_control" />
+              </div>
+              <div class="col-4">
+                <select class="form_control" id="Section">
+                  <option>Select</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </div>
+            </div>
+            <p class="text-center mt-5">Add An Editor</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info w150 ml-auto">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade eventModal" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">The Editorial Board</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" class="input-style" placeholder="EDITOR-IN-CHIEF" value="EDITOR-IN-CHIEF" required="true" />
+                <input type="text" class="input-style" placeholder="EDITORIAL TEAM" value="EDITORIAL TEAM" required="true" />
+                <input type="text" class="input-style" placeholder="DESIGNER" value="DESIGNER" required="true" />
+              </div>
+              <div class="col-6">
+                <input type="text" class="input-style" placeholder="" value="editor_in_cheif" name="editor_in_cheif" />
+                <input type="text" class="input-style" placeholder="EDITORIAL TEAM" value="asst_editor" name="asst_editor" />
+                <input type="text" class="input-style" placeholder="DESIGNER" value="designer" name="designer" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info w150 ml-auto">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade eventModal" id="myModal2">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact the editor</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
+              </div>
+              <input type="url" name="fbLink" placeholder="Enter the Editorial Mail" class="form-control" />
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fab fa-internet-explorer"></i></span>
+              </div>
+              <input type="url" name="fbLink" placeholder="Enter the Editorial website" class="form-control" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info w150 ml-auto">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

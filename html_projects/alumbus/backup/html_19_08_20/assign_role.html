@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">Assign Roles</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+
+        <div class="asign-roles">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col" class="text-center">S. No.</th>
+                <th scope="col" class="text-center">Role</th>
+                <th scope="col" class="text-center">Level</th>
+                <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Profile Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td class="text-center">Role</td>
+                <td class="text-center">Level</td>
+                <td class="text-center">Active</td>
+                <th class="text-center">
+                  <button type="button" data-toggle="modal" data-target="#myModal2" class="btn btn-outline-success green m-auto">Manage / View Roles</button>
+                </th>
+              </tr>
+              <tr>
+                <td class="text-center">1</td>
+                <td class="text-center">Role</td>
+                <td class="text-center">Level</td>
+                <td class="text-center">Active</td>
+                <th class="text-center">
+                  <button type="button" data-toggle="modal" data-target="#myModal2" class="btn btn-outline-success green m-auto">Manage / View Roles</button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-xl mngroles">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Manage Role</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th class="text-center" scope="col">Role</th>
+                        <th class="text-center" scope="col">Create</th>
+                        <th class="text-center" scope="col">Update</th>
+                        <th class="text-center" scope="col">View</th>
+                        <th class="text-center" scope="col">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody class="scroll">
+                      <tr>
+                        <th>
+                          <input type="checkbox" id="role" name="role" />
+                        </th>
+                        <td>
+                          <label class="labelstyle">Check to Assign Create</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign Update</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign View</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign Delete</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          <input type="checkbox" id="role" name="role" />
+                        </th>
+                        <td>
+                          <label class="labelstyle">Check to Assign Create</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign Update</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign View</label>
+                        </td>
+                        <td>
+                          <label class="labelstyle">Check to Assign Delete</label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary w150">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="t_bar">
+    	<h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+		<div class="top_r">
+			<div class="box l">
+				<button type="button" class="btn btn_brdr">Golf Academy</button>
+				<div class="d_t">
+					<p id="currenttime"></p>
+					<p>26/06/20</p>
+				</div>
+				<div class="date">
+					<span>Date</span> <input type="text" id="datepicker" />
+                    <i class="fas fa-calendar-week"></i>
+				</div>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#Instructors">Instructors</button>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#bookabay">Book a Bay Time</button>
+                <button type="button" class="btn btn_default">Activity Logs</button>
+			</div>
+			<div class="box r">
+				<button type="button" class="btn btn_default">Back</button>
+			</div>
+		</div>
+		<div class="cont_area style-5">
+            <div class="time_table style-5">
+    			<div class="table-responsive">
+    				<table class="table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Date</th>
+                                <th>Bay</th>
+                                <th>Booking Member's Name</th>
+                                <th>Min</th>
+                                <th>Show</th>
+                            </tr>
+                        </thead> 
+                        <tbody>
+                            <tr>
+                                <td>14.10</td>
+                                <td>26/06/20</td>
+                                <td>1</td>
+                                <td>Vikash Dharosahoo</td>
+                                <td>30</td>
+                                <td><div class="icon"><i class="fas fa-check"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>14.10</td>
+                                <td>26/06/20</td>
+                                <td>4</td>
+                                <td>Vikash Dharosahoo</td>
+                                <td>40</td>
+                                <td><div class="icon"><i class="fas fa-check"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>14.10</td>
+                                <td>26/06/20</td>
+                                <td>7</td>
+                                <td>Vikash Dharosahoo</td>
+                                <td>60</td>
+                                <td><div class="icon"><i class="fas fa-check"></i></div></td>
+                            </tr>
+                            <tr>
+                                <td>14.10</td>
+                                <td>26/06/20</td>
+                                <td>18</td>
+                                <td>Vikash Dharosahoo</td>
+                                <td>30</td>
+                                <td><div class="icon"><i class="fas fa-times"></i></div></td>
+                            </tr>
+                        </tbody>            
+                    </table>
+    			</div>
+            </div>
+            <div class="tee_btn_l">
+                <ul>
+                    <li><a href="manage_bays.html" class="btn btn_default">Manage Bays</a></li>
+                    <li><a href="view_academy_member.html" class="btn btn_default">View Members</a></li>
+                    <li><a href="create_academy_member.html" class="btn btn_default">Create a Member</a></li>
+                    <li><button type="button" class="btn btn_default">Download Report</button></li>
+                </ul>
+                <ul class="bk">
+                    <li>
+                        <label>Booked for Today</label>
+                        <div class="val_box">
+                            <span>210</span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>Completed Today</label>
+                        <div class="val_box">
+                            <span>110</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="Instructors">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="top_r ga">
+                    <div class="box l">
+                        <h2>Instructors</h2>
+                        <div class="vie_b">
+                            <label>View By</label>
+                            <div class="date">
+                                <span>Date</span> <input type="text" id="datepicker1" />
+                                <i class="fas fa-calendar-week"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box r">
+                        <button type="button" class="btn btn_default">Download</button>
+                        <button type="button" class="btn btn_default" data-toggle="modal" data-target="#manageinstructor">Manage Instructors</button>
+                    </div>
+                </div>
+                <div class="book_form">
+                    <form>
+                        <div class="insct_slider">
+                            <div class="owl-carousel" id="insct_slider">
+                                <div class="item">
+                                    <div class="title">Nitya Chand</div>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">06:00</button>
+                                            <button type="button" class="btn btn_brdr">07:00</button>
+                                            <button type="button" class="btn btn_brdr selected">08:00</button>
+                                            <button type="button" class="btn btn_brdr">09:00</button>
+                                            <button type="button" class="btn btn_brdr">10:00</button>
+                                            <button type="button" class="btn btn_brdr">11:00</button>
+                                            <button type="button" class="btn btn_brdr">12:00</button>
+                                            <button type="button" class="btn btn_brdr">13:00</button>
+                                            <button type="button" class="btn btn_brdr">14:00</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">15:00</button>
+                                            <button type="button" class="btn btn_brdr selected">16:00</button>
+                                            <button type="button" class="btn btn_brdr">17:00</button>
+                                            <button type="button" class="btn btn_brdr">18:00</button>
+                                            <button type="button" class="btn btn_brdr">19:00</button>
+                                            <button type="button" class="btn btn_brdr">20:00</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title">Arjun Baljee</div>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">06:00</button>
+                                            <button type="button" class="btn btn_brdr">07:00</button>
+                                            <button type="button" class="btn btn_brdr selected">08:00</button>
+                                            <button type="button" class="btn btn_brdr">09:00</button>
+                                            <button type="button" class="btn btn_brdr">10:00</button>
+                                            <button type="button" class="btn btn_brdr">11:00</button>
+                                            <button type="button" class="btn btn_brdr">12:00</button>
+                                            <button type="button" class="btn btn_brdr">13:00</button>
+                                            <button type="button" class="btn btn_brdr">14:00</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">15:00</button>
+                                            <button type="button" class="btn btn_brdr selected">16:00</button>
+                                            <button type="button" class="btn btn_brdr">17:00</button>
+                                            <button type="button" class="btn btn_brdr">18:00</button>
+                                            <button type="button" class="btn btn_brdr">19:00</button>
+                                            <button type="button" class="btn btn_brdr">20:00</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title">Arjun Baljee</div>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">06:00</button>
+                                            <button type="button" class="btn btn_brdr">07:00</button>
+                                            <button type="button" class="btn btn_brdr selected">08:00</button>
+                                            <button type="button" class="btn btn_brdr">09:00</button>
+                                            <button type="button" class="btn btn_brdr">10:00</button>
+                                            <button type="button" class="btn btn_brdr">11:00</button>
+                                            <button type="button" class="btn btn_brdr">12:00</button>
+                                            <button type="button" class="btn btn_brdr">13:00</button>
+                                            <button type="button" class="btn btn_brdr">14:00</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">15:00</button>
+                                            <button type="button" class="btn btn_brdr selected">16:00</button>
+                                            <button type="button" class="btn btn_brdr">17:00</button>
+                                            <button type="button" class="btn btn_brdr">18:00</button>
+                                            <button type="button" class="btn btn_brdr">19:00</button>
+                                            <button type="button" class="btn btn_brdr">20:00</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title">Arjun Baljee</div>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">06:00</button>
+                                            <button type="button" class="btn btn_brdr">07:00</button>
+                                            <button type="button" class="btn btn_brdr selected">08:00</button>
+                                            <button type="button" class="btn btn_brdr">09:00</button>
+                                            <button type="button" class="btn btn_brdr">10:00</button>
+                                            <button type="button" class="btn btn_brdr">11:00</button>
+                                            <button type="button" class="btn btn_brdr">12:00</button>
+                                            <button type="button" class="btn btn_brdr">13:00</button>
+                                            <button type="button" class="btn btn_brdr">14:00</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">15:00</button>
+                                            <button type="button" class="btn btn_brdr selected">16:00</button>
+                                            <button type="button" class="btn btn_brdr">17:00</button>
+                                            <button type="button" class="btn btn_brdr">18:00</button>
+                                            <button type="button" class="btn btn_brdr">19:00</button>
+                                            <button type="button" class="btn btn_brdr">20:00</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <div class="title">Arjun Baljee</div>
+                                    <ul>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">06:00</button>
+                                            <button type="button" class="btn btn_brdr">07:00</button>
+                                            <button type="button" class="btn btn_brdr selected">08:00</button>
+                                            <button type="button" class="btn btn_brdr">09:00</button>
+                                            <button type="button" class="btn btn_brdr">10:00</button>
+                                            <button type="button" class="btn btn_brdr">11:00</button>
+                                            <button type="button" class="btn btn_brdr">12:00</button>
+                                            <button type="button" class="btn btn_brdr">13:00</button>
+                                            <button type="button" class="btn btn_brdr">14:00</button>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="btn btn_brdr">15:00</button>
+                                            <button type="button" class="btn btn_brdr selected">16:00</button>
+                                            <button type="button" class="btn btn_brdr">17:00</button>
+                                            <button type="button" class="btn btn_brdr">18:00</button>
+                                            <button type="button" class="btn btn_brdr">19:00</button>
+                                            <button type="button" class="btn btn_brdr">20:00</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="bookabay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book a Bay</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker2" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Bay</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker3" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="viewacademymembers">
+        <div class="modal-dialog v_academy">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="cont_wrap">
+                    <div class="top_r">
+                        <div class="box l">
+                            <h3>View Academy Members</h3>
+                            <div class="searchbox">
+                                <form>
+                                    <div class="inputbox">
+                                        <input type="text" placeholder="search" />
+                                    </div>   
+                                    <button type="submit" class="btn btn_default">Go</button>
+                                    <button type="button" class="btn btn_default">Reset</button>
+                                </form>         
+                            </div>
+                            <button type="button" class="btn btn_default">Activity Logs</button>              
+                        </div>
+                        <div class="box r">
+                            <div class="ttl_p">Total - 325</div>
+                        </div>
+                    </div>
+                    <div class="cont_area style-5">
+                        <div class="v_m_l style-5">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a href="JavaScript:" class="box">
+                                        <div class="i_bx"></div>
+                                        <div class="info">
+                                            <p>First Name</p>
+                                            <p>Last Name</p>
+                                            <p>Membership Type</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort_m_l">
+                            <form>
+                                <div class="hed">
+                                    <p>Sort</p>
+                                    <div class="button">
+                                        <button type="button" class="btn btn_default">Reset</button>
+                                    </div>
+                                </div>
+                                <div class="fields">
+                                    <div class="field">
+                                        <label>Membership Type</label>
+                                        <div class="selectbox">
+                                            <select>
+                                                <option></option>
+                                                <option>Individual</option>
+                                                <option>Corporate</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label>Member</label>
+                                        <div class="inputbox">
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="buttons">
+                                        <button type="button" class="btn btn_default">Download</button>
+                                        <button type="submit" class="btn btn_default">Apply</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="manageinstructor">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Manage Instructor</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="members_fld">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" class="btn btn_default" href="#tab1">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab2">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab3">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab4">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab5">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab6">Trainer Name <i class="fas fa-check"></i></a></li>
+                                <li><a data-toggle="tab" class="btn btn_default" href="#tab7">Trainer Name <i class="fas fa-check"></i></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane fade in active">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab6" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab7" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift Start Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Shift End Time</label>
+                                                    <div class="inputbox">
+                                                        <input  type="time" id="default-picker" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Weekly Off</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="managebays">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="book_form">
+                    <form>
+                        <div class="top_r mb">
+                            <div class="box l">
+                                <h2>Manage Bays</h2>
+                            </div>
+                            <div class="box r">
+                                <div class="field">
+                                    <label>Set Date</label>
+                                    <div class="inputbox date">
+                                        <input type="text" id="datepicker4" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>Opening Time</label>
+                                    <div class="inputbox">
+                                        <input type="time" id="default-picker" />
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>Closing Time</label>
+                                    <div class="inputbox">
+                                        <input type="time" id="default-picker1" />
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label></label>
+                                    <button type="button" class="btn btn_default">Repeat Yesterday</button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="bays_list_btn">
+                            <li>
+                                <p>Bay 1</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 2</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 3</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 4</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 5</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 6</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 7</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 8</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 9</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 10</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 11</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 12</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 13</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 14</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 15</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 16</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 17</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 18</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 19</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 20</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 21</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 22</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 23</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 24</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 25</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 26</p>
+                                <span class="icon danger"><i class="fas fa-times"></i></span>
+                            </li>
+                            <li>
+                                <p>Bay 27</p>
+                                <span class="icon"><i class="fas fa-check"></i></span>
+                            </li>
+                        </ul>
+                        <div class="allow_memb"><span>18</span> Short game members allowed</div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="createacademymember">
+        <div class="modal-dialog big_m">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="c_n_memb">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Membership Type</label>
+                                                <div class="selectbox">
+                                                    <select>
+                                                        <option></option>
+                                                        <option>Individual</option>
+                                                        <option>Corporate</option>
+                                                        <option>NRI</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Membership Number</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Start Date</label>
+                                                <div class="inputbox date">
+                                                    <input id="datepicker1" type="text" />
+                                                    <i class="fas fa-calendar-week"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>End Date</label>
+                                                <div class="inputbox date">
+                                                    <input id="datepicker2" type="text" />
+                                                    <i class="fas fa-calendar-week"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Photo</label>
+                                                <div class="inputbox upl_img">
+                                                    <label for="gig_upload">
+                                                        <input type="file" id="gig_upload" />
+                                                        <img src="" id="upload_img" alt="" />
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Title</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>First Name</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Middle and Last Name</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Date of Birth</label>
+                                                <div class="inputbox date">
+                                                    <input id="datepicker2" type="text" />
+                                                    <i class="fas fa-calendar-week"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Occupation</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Phone Number</label>
+                                                <div class="inputbox">
+                                                    <input type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="field">
+                                                <label>Email ID</label>
+                                                <div class="inputbox">
+                                                    <input type="email" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="box">
+                                    <div class="members_fld">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" class="btn btn_default" href="#acad_tab1">For Admin Use <i class="fas fa-check"></i></a></li>
+                                            <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab2">Business and Pan <i class="fas fa-check"></i></a></li>
+                                            <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab3">Corporate Nominee 1 <i class="fas fa-check"></i></a></li>
+                                            <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab4">Corporate Nominee 2 <i class="fas fa-check"></i></a></li>
+                                            <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab5">Nominee 1 Family Access <i class="fas fa-check"></i></a></li>
+                                            <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab6">Nominee 2 Family Access <i class="fas fa-check"></i></a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="acad_tab1" class="tab-pane fade in active">
+                                                <h3>For Admin Use</h3>
+                                                <div class="fields">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Received By</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Designation</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Date</label>
+                                                                <div class="inputbox date">
+                                                                    <input id="datepicker1" type="text" />
+                                                                    <i class="fas fa-calendar-week"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>IFRS Deposit</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Non Refundable</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Annual Fee</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="field">
+                                                                <label>DLF Resident</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Cheq Deposit Date</label>
+                                                                <div class="inputbox date">
+                                                                    <input id="datepicker1" type="text" />
+                                                                    <i class="fas fa-calendar-week"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-8">
+                                                            <div class="field">
+                                                                
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Cheq Return Date</label>
+                                                                <div class="inputbox date">
+                                                                    <input id="datepicker1" type="text" />
+                                                                    <i class="fas fa-calendar-week"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Drawn On</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Cheque Number</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="acad_tab2" class="tab-pane fade">
+                                                <h3>Business and Pan</h3>
+                                                <div class="fields">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Nature of Business</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>City of Incorporation</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Pan Number</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Member's Referrence 1</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Member's 1 Telephone No</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Member's Referrence 2</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Member's 2 Telephone No</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="acad_tab3" class="tab-pane fade">
+                                                <h3>Corporate Member Detail</h3>
+                                                <div class="fields">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Photo</label>
+                                                                <div class="inputbox upl_img">
+                                                                    <label for="corp_photo">
+                                                                        <input type="file" id="corp_photo" />
+                                                                        <img src="" id="corp_img" alt="" />
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Title</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <label>First Name</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <label>Middle and Last Name</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Designation</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Phone Number</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Date of Birth</label>
+                                                                <div class="inputbox">
+                                                                    <input type="email" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Email ID</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Golfer</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="acad_tab4" class="tab-pane fade">
+                                                <h3>Corporate Member Detail</h3>
+                                                <div class="fields">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="field">
+                                                                <label>Photo</label>
+                                                                <div class="inputbox upl_img">
+                                                                    <label for="corp_photo1">
+                                                                        <input type="file" id="corp_photo1" />
+                                                                        <img src="" id="corp_img1" alt="" />
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Title</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <label>First Name</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="field">
+                                                                <label>Middle and Last Name</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Designation</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Phone Number</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Date of Birth</label>
+                                                                <div class="inputbox">
+                                                                    <input type="email" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>N1 Email ID</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="field">
+                                                                <label>Golfer</label>
+                                                                <div class="inputbox">
+                                                                    <input type="text" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="acad_tab5" class="tab-pane fm_access fade">
+                                                <h3>Family Data Access</h3>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c1">N1 Spouse <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c2">N1 Child 1 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c3">N1 Child 2 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c4">N1 Child 3 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c5">N1 Child 4 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#acad_tabs_c6">N1 Assistant <i class="fas fa-check"></i></a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="acad_tabs_c1" class="tab-pane fade in active">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>S First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>S Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S DOB</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Anniversary</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>S Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="corp_photo2">
+                                                                                <input type="file" id="corp_photo2" />
+                                                                                <img src="" id="corp_img2" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="acad_tabs_c2" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="corp_photo3">
+                                                                                <input type="file" id="corp_photo3" />
+                                                                                <img src="" id="corp_img3" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="acad_tabs_c3" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="corp_photo4">
+                                                                                <input type="file" id="corp_photo4" />
+                                                                                <img src="" id="corp_img4" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="acad_tabs_c4" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="corp_photo5">
+                                                                                <input type="file" id="corp_photo5" />
+                                                                                <img src="" id="corp_img5" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="acad_tabs_c5" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="corp_photo6">
+                                                                                <input type="file" id="corp_photo6" />
+                                                                                <img src="" id="corp_img6" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="acad_tabs_c6" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Assistant First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Asst. Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="acad_tab6" class="tab-pane fm_access fade">
+                                                <h3>Family Data Access</h3>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c1">N1 Spouse <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c2">N1 Child 1 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c3">N1 Child 2 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c4">N1 Child 3 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c5">N1 Child 4 <i class="fas fa-check"></i></a></li>
+                                                    <li class="col-md-4"><a data-toggle="tab" class="btn btn_default" href="#tabs_c6">N1 Assistant <i class="fas fa-check"></i></a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="tabs_c1" class="tab-pane fade in active">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>S First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>S Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S DOB</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Anniversary</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>S Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>S Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="acad_nomi_photo1">
+                                                                                <input type="file" id="acad_nomi_photo1" />
+                                                                                <img src="" id="acad_nomi_img1" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabs_c2" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="acad_nomi_photo2">
+                                                                                <input type="file" id="acad_nomi_photo2" />
+                                                                                <img src="" id="acad_nomi_img2" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabs_c3" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="acad_nomi_photo3">
+                                                                                <input type="file" id="acad_nomi_photo3" />
+                                                                                <img src="" id="acad_nomi_img3" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabs_c4" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="acad_nomi_photo4">
+                                                                                <input type="file" id="acad_nomi_photo4" />
+                                                                                <img src="" id="acad_nomi_img4" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabs_c5" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Child 1 Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Date of Birth</label>
+                                                                        <div class="inputbox date">
+                                                                            <input id="datepicker2" type="text" />
+                                                                            <i class="fas fa-calendar-week"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Nationality</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field fm_ac_ph">
+                                                                        <label>Photo</label>
+                                                                        <div class="inputbox upl_img">
+                                                                            <label for="acad_nomi_photo5">
+                                                                                <input type="file" id="acad_nomi_photo5" />
+                                                                                <img src="" id="acad_nomi_img5" alt="" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Golfer</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabs_c6" class="tab-pane fade">
+                                                        <div class="fields">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Assistant First Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="field">
+                                                                        <label>Asst. Middle and Last Name</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Mobile</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="text" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="field">
+                                                                        <label>Email</label>
+                                                                        <div class="inputbox">
+                                                                            <input type="email" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Update Details</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="t_bar">
+      <h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+      <div class="top_r">
+        <div class="box l">
+          <button type="button" class="btn btn_brdr">Create Magazine</button>
+          <div class="d_t">
+            <p id="currenttime"></p>
+            <p>26/06/20</p>
+          </div>
+          <div class="date">
+            <span>Date</span> <input type="text" id="datepicker" />
+                      <i class="fas fa-calendar-week"></i>
+          </div>
+        </div>
+        <div class="box r">
+          <a href="magazine.html" class="btn btn_default">Back</a>
+        </div>
+      </div>
+      <div class="cont_area style-5">
+        <div class="crmagzine">
+          <form>  
+            <div class="magzine_tabs">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab" class="active btn btn_default" href="#acad_tab1">NEW ISSUE/COVER</a></li>
+              <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab2">TABLE OF CONTENTS</a></li>
+              <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab3">ARTICLES</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div id="acad_tab1" class="tab-pane fade in active">
+                <div class="newIssue cover">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="field">
+                        <div class="selectbox">
+                          <select class="form_control" id="issueMonth">
+                            <option>Select Month</option>
+                            <option>Jan</option>
+                            <option>Fed</option>
+                            <option>Mar</option>
+                            <option>April</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="selectbox">
+                          <select class="form_control mt10" id="issueYear">
+                            <option>Select year</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                          </select>
+                          </div>
+                      </div>
+                      <div class="field bt">
+                        <button type="button" class="btn btn_default" data-toggle="modal" data-target="#myModal1">The editorial board</button>
+                      </div>
+                      <div class="field bt">
+                        <button type="button" class="btn btn_default" data-toggle="modal" data-target="#myModal2">Contact the editor</button>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="field">
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload">
+                              <input type="file" id="gig_upload">
+                              <span class="img"><span>Magazine Cover</span><img src="" id="upload_img" alt=""></span>
+                          </label>
+                          <button type="button" class="btn btn_default">Upload Cover</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="field">
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload_f">
+                              <input type="file" id="gig_upload_f">
+                              <span class="img"><span>Upload PDF</span></span>
+                          </label>
+                          <button type="button" class="btn btn_default">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab2" class="tab-pane fade">
+                <div class="newIssue toc">
+                  <div class="row">
+                    <div class="col-4">
+                      <button type="button" class="btn btn_default add_m">Add More</button>
+                      <p>Table of Contents</p>
+                      <div class="section_scroll style-5">
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 1" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 2" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 3" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 4" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 5" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 6" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 7" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="inputbox">
+                              <input type="text" name="section" placeholder="section 8" />
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="field">
+                        <div class="inputbox upl_img">
+                          <label for="gig_upload2">
+                              <input type="file" id="gig_upload2">
+                              <span class="img"><span>Upload Banner Image</span><img src="" id="upload_img2" alt=""></span>
+                          </label>
+                          <button type="button" class="btn btn_default">Upload Banner</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab3" class="tab-pane fade">
+                <div class="newIssue">
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="javascript:" class="btn btn_default add_m" data-toggle="modal" data-target="#addartical">Add a new article</a>
+                      <div class='section_scroll style-5'>
+                        <button type="button" class="btn btn_default active">Section 1</button>
+                        <button type="button" class="btn btn_default">Section 2</button>
+                        <button type="button" class="btn btn_default">Section 3</button>
+                        <button type="button" class="btn btn_default">Section 4</button>
+                        <button type="button" class="btn btn_default">Section 5</button>
+                        <button type="button" class="btn btn_default">Section 6</button>
+                        <button type="button" class="btn btn_default">Section 7</button>
+                        <button type="button" class="btn btn_default">Section 8</button>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="row article_scroll">
+                          <div class="col-8">
+                            <a href="javascript:" data-toggle="modal" data-target="#myModal1">
+                              <div class='article'>
+                                <p class="line-clamp-one">Title</p>
+                                <p class='sub-title'>Sub Title</p>
+                              </div>
+                            </a>
+                            <a href="javascript:" data-toggle="modal" data-target="#myModal1">
+                              <div class='article'>
+                                <p class="ttl">Title</p>
+                                <p class='sub_ttl'>Sub Title</p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons text-right">
+              <button type="submit" class="btn btn_default">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="addartical">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <form>
+            <h2>Add an Article</h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="row">
+              <div class="col-4">
+                <div class="inputbox">
+                  <input type="text" name="title" placeholder="Title of Article" class="" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="inputbox">
+                  <input type="text" name="subtitle" placeholder="Sub Title of Article" class="" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="selectbox">
+                  <select class="" id="Section">
+                    <option>Select</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5">Add An Editor</p>
+            <div class="buttons text-right">
+              <button type="button" class="btn btn_default">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <form>
+            <h2>The Editorial Board</h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="row">
+              <div class="col-6">
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="EDITOR-IN-CHIEF" value="EDITOR-IN-CHIEF" required="true" />
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="EDITORIAL TEAM" value="EDITORIAL TEAM" required="true" />
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="DESIGNER" value="DESIGNER" required="true" />
+                    </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="" value="editor_in_cheif" name="editor_in_cheif" />
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="EDITORIAL TEAM" value="asst_editor" name="asst_editor" />
+                    </div>
+                </div>
+                <div class="field">
+                  <div class="inputbox">
+                    <input type="text" placeholder="DESIGNER" value="designer" name="designer" />
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="button text-right">
+              <button type="button" class="btn btn_default mt-3">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-md cont_edit">
+        <div class="modal-content">
+          <form>
+            <h2>Contact the editor</h2>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
+              </div>
+              <input type="url" name="fbLink" placeholder="Enter the Editorial Mail" class="form-control" />
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fab fa-internet-explorer"></i></span>
+              </div>
+              <input type="url" name="fbLink" placeholder="Enter the Editorial website" class="form-control" />
+            </div>
+            <div class="buttons mt-3 text-right">
+              <button type="button" class="btn btn_default">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

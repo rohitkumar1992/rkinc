@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golf Academy</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Golf Academy">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Golf Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <div class="t_bar">
+    	<h2><a href="home.html">DLFGCC</a></h2>
+        <ul class="nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:">Rohit kumar
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Javascript:">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont_wrap">
+		<div class="top_r">
+			<div class="box l">
+				<button type="button" class="btn btn_brdr">Gymnasium</button>
+				<div class="d_t">
+					<p id="currenttime"></p>
+					<p>26/06/20</p>
+				</div>
+				<div class="date">
+					<span>Date</span> <input type="text" id="datepicker" />
+                    <i class="fas fa-calendar-week"></i>
+				</div>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#managetrainer">Manage Trainer</button>
+                <button type="button" class="btn btn_default" data-toggle="modal" data-target="#bookabay">Download Trainer</button>
+                <button type="button" class="btn btn_default">Download Record</button>
+                <button type="button" class="btn btn_default">Activity Logs</button>
+			</div>
+			<div class="box r">
+				<button type="button" class="btn btn_default">Back</button>
+			</div>
+		</div>
+		<div class="cont_area gymnasium style-5">
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" class="btn btn_default active" href="#gym_tab1">Trainer 1</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#gym_tab2">Trainer 2</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#gym_tab3">Trainer 3</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#gym_tab4">Trainer 4</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#gym_tab5">Trainer 5</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="gym_tab1" class="tab-pane fade in active">
+                    <form>
+                        <div class="top_r ga">
+                            <div class="box l">
+                                <h2>Trainer 1 Schedule</h2>
+                                <div class="gymdate">
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker2" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                    <span>to</span>
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker3" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_form">
+                            <div class="insct_slider">
+                                <div class="owl-carousel" id="gym_slider">
+                                    <div class="item">
+                                        <div class="title">Mon</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">05:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="item">
+                                        <div class="title">Tue</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">19:00</button>
+                                            </li> 
+                                        </ul>
+                                    </div> -->
+                                    <div class="item">
+                                        <div class="title">Wed</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Thu</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">10:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Fri</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">07:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sat</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sun</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="gym_tab2" class="tab-pane fade">
+                    <form>
+                        <div class="top_r ga">
+                            <div class="box l">
+                                <h2>Trainer 2 Schedule</h2>
+                                <div class="gymdate">
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker4" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                    <span>to</span>
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker5" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_form">
+                            <div class="insct_slider">
+                                <div class="owl-carousel" id="gym_slider1">
+                                    <div class="item">
+                                        <div class="title">Mon</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">05:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Wed</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Thu</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">10:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Fri</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">07:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">18:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sat</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sun</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer1">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer1">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="gym_tab3" class="tab-pane fade">
+                    <form>
+                        <div class="top_r ga">
+                            <div class="box l">
+                                <h2>Trainer 3 Schedule</h2>
+                                <div class="gymdate">
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker6" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                    <span>to</span>
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker7" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_form">
+                            <div class="insct_slider">
+                                <div class="owl-carousel" id="gym_slider2">
+                                    <div class="item">
+                                        <div class="title">Mon</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">05:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Wed</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Thu</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">10:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Fri</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">07:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">18:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sat</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sun</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer2">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer2">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="gym_tab4" class="tab-pane fade">
+                    <form>
+                        <div class="top_r ga">
+                            <div class="box l">
+                                <h2>Trainer 4 Schedule</h2>
+                                <div class="gymdate">
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker8" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                    <span>to</span>
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker9" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_form">
+                            <div class="insct_slider">
+                                <div class="owl-carousel" id="gym_slider3">
+                                    <div class="item">
+                                        <div class="title">Mon</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">05:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Wed</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Thu</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">10:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Fri</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">07:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">18:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sat</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sun</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer3">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer3">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="gym_tab5" class="tab-pane fade">
+                    <form>
+                        <div class="top_r ga">
+                            <div class="box l">
+                                <h2>Trainer 5 Schedule</h2>
+                                <div class="gymdate">
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker10" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                    <span>to</span>
+                                    <div class="inputbox">
+                                        <input type="text" id="datepicker11" />
+                                        <i class="fas fa-calendar-week"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_form">
+                            <div class="insct_slider">
+                                <div class="owl-carousel" id="gym_slider4">
+                                    <div class="item">
+                                        <div class="title">Mon</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">05:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Wed</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Thu</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">08:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">09:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">10:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Fri</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">07:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">11:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">12:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">18:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sat</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">17:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">18:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">19:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">20:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">21:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">22:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Sun</div>
+                                        <div class="shift">
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                            <span>to</span>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker2" />
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">06:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">07:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">08:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">09:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">10:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">11:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">12:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">13:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">14:00</button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">15:00</button>
+                                                <button type="button" class="btn btn_brdr selected" data-toggle="modal" data-target="#booktrainer4">16:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">17:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">18:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">19:00</button>
+                                                <button type="button" class="btn btn_brdr" data-toggle="modal" data-target="#booktrainer4">20:00</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+		</div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="booktrainer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book Trainer 1</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker6" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Trainer</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker7" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="booktrainer1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book Trainer 2</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker8" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Trainer</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker9" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="booktrainer2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book Trainer 3</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker10" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Trainer</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker11" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="booktrainer3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book Trainer 4</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker12" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Trainer</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker13" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="booktrainer4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Book Trainer 5</h2>
+                <div class="book_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker14" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Trainer</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Duration</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Booking Member's Name</label>
+                                            <div class="inputbox">
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field">
+                                            <label>Membership No</label>
+                                            <div class="inputbox">
+                                                <input type="text"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Date</label>
+                                            <div class="inputbox date">
+                                                <input id="datepicker15" type="text" />
+                                                <i class="fas fa-calendar-week"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booking Time</label>
+                                            <div class="inputbox">
+                                                <input type="time" id="default-picker1" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="field">
+                                            <label>Booked By</label>
+                                            <div class="selectbox">
+                                                <select>
+                                                    <option></option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Save and Book</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="managetrainer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2>Manage Trainers</h2>
+                <div class="book_form mang_trnr">
+                    <form>
+                        <div class="members_fld">
+                            <div class="manage_trnr_tabs">
+                                <div class="addmoretab">
+                                    <div class="inputbox addmangtrnr">
+                                        <input type="text" id="food" />
+                                        <a onclick="addToList()" id="addButton" class="btn btn_default" href="JavaScript:">Add</a>
+                                    </div>
+                                    <a class="btn btn_default addmore" href="JavaScript:">Add More</a>
+
+                                </div>
+                                <ul class="nav nav-tabs" id="foodlist">
+                                    <li class="active"><a data-toggle="tab" class="btn btn_default" href="#tab1">Trainer Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#tab2">Trainer Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#tab3">Trainer Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#tab4">Trainer Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#tab5">Trainer Name <i class="fas fa-check"></i></a></li>
+                                    <li><a data-toggle="tab" class="btn btn_default" href="#tab6">Trainer Name <i class="fas fa-check"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane fade in active">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab6" class="tab-pane fade">
+                                    <div class="fields">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>First Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field">
+                                                    <label>Middle and Last Name</label>
+                                                    <div class="inputbox">
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons text-right">
+                            <button type="submit" class="btn btn_default">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

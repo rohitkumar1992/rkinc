@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alumbus - CMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div class="fixedheight">
+      <div class="_header">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-4">
+              <div class="d-flex align-items-center">
+                <div class="logo"></div>
+                <p class="logo-txt">Alumbus CMS</p>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="header_text">Create Venture</div>
+            </div>
+            <div class="col-4 text-right">
+              <button type="button" class="btn dropdown-toggle ml-auto" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Username
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Username</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components" style="border: none;">
+          <li>
+            <a href="dashboard.html"><i class="fa fa-home fa-fw"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="user_analytics.html"><i class="fas fa-chart-pie"></i>Analytics</a>
+          </li>
+          <li>
+            <a href="admin.html"><i class="fas fa-user-shield fa-fw"></i>CMS Admin Management</a>
+          </li>
+          <li>
+            <a href="user_manage.html"><i class="fas fa-users fa-fw"></i>User Management</a>
+          </li>
+          <li>
+            <a href="ticker.html"><i class="fas fa-users fa-fw"></i>Ticker</a>
+          </li>
+          <li>
+            <a href="event_list.html"><i class="fab fa-elementor fa-fw"></i>Events</a>
+          </li>
+          <li>
+            <a href="venture_list.html"><i class="fas fa-medal fa-fw"></i>Ventures</a>
+          </li>
+          <li>
+            <a href="social_list.html"><i class="fas fa-people-carry fa-fw"></i>Social Work</a>
+          </li>
+          <li>
+            <a href="job.html"><i class="fas fa-award fa-fw"></i>Jobs</a>
+          </li>
+          <li>
+            <a href="groups.html"><i class="fas fa-pen-fancy fa-fw"></i>Groups</a>
+          </li>
+          <li>
+            <a href="magazine.html"><i class="fas fa-envelope fa-fw"></i>Magazine</a>
+          </li>
+          <li>
+            <a href="gallery.html"><i class="fas fa-images fa-fw"></i>Photo Galleries</a>
+          </li>
+          <li>
+            <a href="videos.html"><i class="fas fa-camera-retro fa-fw"></i>Videos</a>
+          </li>
+          <li>
+            <a href="news_list.html"><i class="far fa-newspaper fa-fw"></i>News</a>
+          </li>
+          <li>
+            <a href="gurupranam.html"><i class="fas fa-school fa-fw"></i>Teachers</a>
+          </li>
+          <li>
+            <a href="classifieds.html"><i class="fas fa-gift fa-fw"></i>Classifieds</a>
+          </li>
+          <li>
+            <a href="push_notification.html"><i class="fas fa-bell fa-fw"></i>Push Notification</a>
+          </li>
+          <li>
+            <a href="pop_notification.html"><i class="fas fa-bell fa-fw"></i>Pop Notification</a>
+          </li>
+          <li>
+            <a href="report.html"><i class="fas fa-bug fa-fw"></i>Report Listing</a>
+          </li>
+          <li>
+            <a href="contribution.html"><i class="fas fa-hand-holding-usd fa-fw"></i>Contribution</a>
+          </li>
+          <li>
+            <a href="user_feedback.html"><i class="fas fa-feather-alt fa-fw"></i>User Feedback</a>
+          </li>
+          <li>
+            <a href="subscription.html"><i class="fas fa-donate fa-fw"></i>Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+        <div class="editProfile event_from editevent">
+          <form>
+            <div class="mb10 tabing">
+              <ul class="nav nav-tabs tab-bar edt_evnt_tabs_btn horizontal style-5">
+                <li><a data-toggle="tab" class="btn btn_default active" href="#acad_tab1">Basic Details</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab2">About the Venture</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab3">Organiser</a></li>
+                <li><a data-toggle="tab" class="btn btn_default" href="#acad_tab4">Media</a></li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div id="acad_tab1" class="tab-pane fade in active">
+                <div>
+                  <div class="row mb-2 mt-4">
+                    <div class="col-6">
+                      <label for="categoryId" class="labelstyle">Nature of Venture</label>
+                      <select class="form_control" id="categoryId" required>
+                        <option>Select Nature of Venture</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        <option>Option 4</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label for="projectTitle" class="labelstyle">Venture Name</label>
+                      <input type="text" name="projectTitle" placeholder="Enter Social Work Name" class="form_control" required />
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-6">
+                          <label for="year" class="labelstyle">Start Year</label>
+                          <select class="form_control" id="year">
+                              <option>Start Year</option>
+                              <option>2016</option>
+                              <option>2017</option>
+                              <option>2018</option>
+                              <option>2019</option>
+                            </select>
+                      </div>
+                      <div class="col-6">
+                          <label for="eventDate" class="labelstyle">Investment Closing Date</label>
+                          <input type="date" name="eventDate" placeholder="Closing Date" class="form_control" required />
+                      </div>
+                  </div>
+                  <div class="row mt-3">
+                      <div class="col-6">
+                          <label for="directedBy" class="labelstyle">Founder</label>
+                          <input type="text" name="directedBy" placeholder="Founder" class="form_control" required />
+                      </div>
+                      <div class="col-6">
+                          <label for="producedBy" class="labelstyle">Co-Founder</label>
+                          <input type="text" name="producedBy" placeholder="Co-Founder" class="form_control" required />
+                      </div>
+                  </div>
+
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <label class="labelstyle">Social Media Links</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-facebook fb-color"></i></span>
+                        </div>
+                        <input type="url" name="fbLink" placeholder="Enter the Facebook URL" class="form-control" />
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-twitter twitter-color"></i></span>
+                        </div>
+                        <input type="url" name="twLink" placeholder="Enter the Twitter URL" class="form-control" />
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fab fa-wikipedia-w wiki-color"></i></span>
+                        </div>
+                        <input type="url" name="wikiLink" placeholder="Enter the Wiki URL" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab2" class="tab-pane fade">
+                <div>
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="projectVideo" class="labelstyle">Venture Video</label>
+                      <input type="url" name="projectVideo" class="form_control" placeholder="Paste your youube, vimeo, soundcloud URL for project." />
+                    </div>
+                    <div class="col-6">
+                      <label for="projectVideo" class="labelstyle">Venture Creative Image</label>
+                      <div class="d-flex">
+                        <input type="text" name="projectVideo" class="form_control" placeholder="Click to Upload image." readonly />
+                        <button type="button" class="btn btn-info ml10 w150">Add</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <label for="aboutProject" class="labelstyle">About the Venture</label>
+                      <textarea class="form_control" rows="10" id="aboutProject" placeholder="About Project" required></textarea>
+                    </div>
+                  
+                    <div class="col-6">
+                      <label for="tag" class="labelstyle">Tag</label>
+                      <div class="d-flex">
+                        <input type="text" placeholder="Add Tag" name="tag" class="form_control" required="true" />
+                        <button type="button" class="btn btn-info w150 ml10">Add</button>
+                      </div>
+                      <div class="tags mt-2">
+                        <span class="styletag">tag 1<span class="pclose"> + </span></span>
+                        <span class="styletag">tag 2<span class="pclose"> + </span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab3" class="tab-pane fade">
+                <div class="event_attendee">
+                  <div class="box l">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="field mb10">
+                          <label for="name" class="labelstyle">
+                            The Team 1 
+                            <div class="form-check-inline ml10">
+                              <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio">From School</label>
+                            </div>
+                          </label>
+                          <input type="text" name="name" placeholder="Name" class="form_control" />
+                        </div>
+                        <div class="field mb10">
+                          <select class="form_control" id="batch">
+                            <option>Batch</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                          </select>
+                        </div>
+                        <div class="field mb10">
+                          <div class="inputbox upl_img organise">
+                              <label for="gig_upload">
+                                  <input type="file" id="gig_upload" />
+                                  <span class="img"><img src="" id="upload_img" alt="" /><span>Photo/Upload Photo</span></span>
+                              </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="field mb10">
+                          <label for="name" class="labelstyle">
+                            The Team 2 
+                            <div class="form-check-inline ml10">
+                              <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio1">From School</label>
+                            </div>
+                          </label>
+                          <input type="text" name="name" placeholder="Name" class="form_control" />
+                        </div>
+                        <div class="field mb10">
+                          <select class="form_control" id="batch">
+                            <option>Batch</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                          </select>
+                        </div>
+                        <div class="field mb10">
+                          <div class="inputbox upl_img organise">
+                              <label for="gig_upload2">
+                                  <input type="file" id="gig_upload2" />
+                                  <span class="img"><img src="" id="upload_img2" alt="" /><span>Photo/Upload Photo</span></span>
+                              </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="field mb10">
+                          <label for="name" class="labelstyle">
+                            The Team 3 
+                            <div class="form-check-inline ml10">
+                              <label class="labelstyle"> <input type="radio" class="form-check-input" name="optradio2">From School</label>
+                            </div>
+                          </label>
+                          <input type="text" name="name" placeholder="Name" class="form_control" />
+                        </div>
+                        <div class="field mb10">
+                          <select class="form_control" id="batch">
+                            <option>Batch</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                          </select>
+                        </div>
+                        <div class="field mb10">
+                          <div class="inputbox upl_img organise">
+                              <label for="gig_upload3">
+                                  <input type="file" id="gig_upload3" />
+                                  <span class="img"><img src="" id="upload_img3" alt="" /><span>Photo/Upload Photo</span></span>
+                              </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box r">
+                    <div class="buttons text-right">
+                      <button type="button" class="btn btn_default">Add More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="acad_tab4" class="tab-pane fade">
+                <div>
+                  <div class="media-container">
+                    <div class="row mt-4">
+                      <div class="col-3">
+                        <h5 class="labelstyle">Batch Upload Image Directly From:</h5>
+                      </div>
+                      <div class="col-7">
+                        <button type="button" class="btn btn-info mr-1"><i class="fa fa-upload mr10"></i>Upload-Phone/Laptop</button>
+                        <button type="button" class="btn btn-info mr-1"><i class="fa fa-upload mr10"></i>Upload Documents</button>
+                        <button type="button" class="btn btn-info" id="uploadVideo"><i class="fab fa-youtube mr10"></i>Upload Video</button>
+                      </div>
+                    </div>
+
+                    <div class="row no-gutters" id="uploadVideoDiv">
+                      <div class="col-md-6 mt25 d-flex">
+                        <input type="url" class="form_control" name="video" placeholder="Paste Your Youtube, Vimeo, Soundcloud URL" />
+                        <button type="button" class="btn btn-info ml10 w100">Add</button>
+                      </div>
+                    </div>
+
+                    <div class="medialist mt-4">
+                      <div class="video-frame-maxwidth mediaVideothumb">
+                        <div>
+                          <div class="image-style top cursor">
+                            <img src="images/imagesize16_9.png" class="w100p img-fluid" alt="" />
+                          </div>
+                          <div class="icon i_close i_close_aligntop"></div>
+                        </div>
+                      </div>
+
+                      <div class="video-frame-maxwidth mediaVideothumb">
+                        <div>
+                          <span class="playicon"><i class="fa fa-play-circle" aria-hidden="true"></i></span>
+                          <div class="image-style top cursor">
+                            <img src="images/imagesize16_9.png" class="w100p img-fluid" alt="" />
+                          </div>
+                          <div class="icon i_close i_close_aligntop"></div>
+                        </div>
+                      </div>
+
+                      <div class="video-frame-maxwidth mediaVideothumb">
+                        <a href="#">
+                          <span class="playicon"><i class="fa fa-file-pdf" aria-hidden="true"></i></span>
+                          <div class="image-style top cursor">
+                            <img src="images/imagesize16_9.png" class="w100p img-fluid" alt="" />
+                          </div>
+                          <div class="icon i_close i_close_aligntop"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="progress-bar-pos">
+              <div class="prgrs-bar-container">
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width: 25%;">25%</div>
+                </div>
+                <div class="d-flex">
+                  <button type="button" class="btn btn-info">Previous</button>
+                  <button type="button" class="btn btn-info btn_s_n">Save and Next</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="page-footer">
+      <div>
+        Platform Supported by:
+        <a href=""> Incred Applications Pvt. Ltd. ©</a>
+      </div>
+    </div>
+  </body>
+</html>
