@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSOBS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DSOBS">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="DSOBS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header hm">
+        <div class="top_bar">
+            <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+            <div class="dropdown event_l_p">
+                <a href="javascript:" class="navlink">Directory <i class="fa fa-angle-down"></i></a>
+                <div class="alllinks style-5">
+                    <div class="close"><i class="fas fa-times"></i></div>
+                    <a href="javascript:">Chat</a>
+                    <a href="javascript:">Events</a>
+                    <a href="javascript:" class="active">Directory</a>
+                    <a href="javascript:">News</a>
+                    <a href="javascript:">Ventures</a>
+                    <a href="javascript:">Common Room</a>
+                    <a href="javascript:">Store</a>
+                    <a href="javascript:">Melaram Gallery</a>
+                    <a href="javascript:">Jobs</a>
+                    <a href="javascript:">Offers</a>
+                    <a href="javascript:">Footsteps</a>
+                    <a href="javascript:">Videos</a>
+                    <a href="javascript:">The Rose Bowl</a>
+                    <a href="javascript:">Contrubutions</a>
+                    <a href="javascript:">Masters</a>
+                </div>
+            </div>
+            <a class="navlink i" href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+    </header>
+    <div class="inner_wrap style-5">
+        <div class="search_ar">
+            <div class="srch_by">
+                <h4>Search By</h4>
+                <ul class="srchby_l">
+                    <li>
+                        <label class="checkbx">
+                            Name/Batch/ </br>House/Number
+                            <input type="checkbox" />
+                            <span class="ic">
+                                <img src="images/icon_checkbox_checked.jpg" alt="" />
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbx">
+                            Location
+                            <input type="checkbox" />
+                            <span class="ic">
+                                <img src="images/icon_checkbox_checked.jpg" alt="" />
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbx">
+                            Company
+                            <input type="checkbox" />
+                            <span class="ic">
+                                <img src="images/icon_checkbox_checked.jpg" alt="" />
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbx">
+                            Tags
+                            <input type="checkbox" />
+                            <span class="ic">
+                                <img src="images/icon_checkbox_checked.jpg" alt="" />
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchbox">
+                <div class="inputbox">
+                    <input type="text" placeholder="I am looking for" />
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="filtr_drop">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:"><span class="icon"><i class="fas fa-sliders-h"></i></span></a>
+                    <div class="dropdown-menu b_d">
+                        <div class="drop_icon">
+                            <span></span>
+                        </div>
+                        <h3 class="text-center">Select By Profession</h3>
+                        <div class="searchbox">
+                            <div class="inputbox">
+                                <input type="text" placeholder="search" />
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <ul class="style-5">
+                            <li>
+                                <label class="radio">
+                                    Academia
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>    
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Accountants / CA/ CPA
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>    
+                                <label class="radio">
+                                    Advertising / Public Relations
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Aerospace
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Agribusiness
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Agriculture
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Armed Forces
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Automotive adn Anvillary
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Aviation
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Banking, Mortage
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+
+
+                            <li>
+                                <label class="radio">
+                                    Banking, Commercial
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Banks, Savings & Loans
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Bars & Restaurants
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Books, Magazines & Newspaper
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Broadcasters, Radio / TV
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    BPO
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Business Services
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Car Dealers
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Civil Servants / Public Oficials
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont_ar dir">
+            <h4>Search By Profession</h4>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs style-5">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab1">ABCD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2">EFGH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab3">IJKL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab4">MNOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab5">QRSTU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab6">VWXYZ</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <div class="word_l">
+                        <div>A</div>
+                        <div>B</div>
+                        <div>C</div>
+                        <div>D</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="directory_detail.html">Academia</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Accountant/CA/CPT</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Advertising/Public Relations</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Aerospace</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Agribusiness</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Agriculture</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Alternative and Planning</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Arts and Culture</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Armed Forces</a>
+                            </li>
+                            <li>
+                                <a href="directory_detail.html">Aviation</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Banking, Mortage</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Banks, Commercial</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Banks, Savings & Loans</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Bars & Restaurants</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Books, Magazines & Newspapers</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Broadcasters, Radio/TV</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Builders / General Contractors</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Builders / Residentials</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Building Materials & Equipment</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">BPO</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Cable & Satellite TV</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Card Dealers</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Chemicals Related Manufacturing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Civil Servants / Public Officials</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Clothing Garments Manufacturing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Computer Software</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Consumer Durables</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Consumption Products</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Construction Services</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Defence</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Defense Contractors</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Distillers and Brewers</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Design Professional</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Doctors & Other Health Professionals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="word_l">
+                        <div>E</div>
+                        <div>F</div>
+                        <div>G</div>
+                        <div>H</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:">Education</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Educational Institutions</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Electronics Manufacturing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Electronics Supply</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Energy & Natural Resources</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Entertainment Industry</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Environment</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Exports</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Finance / Credit Companies</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Finance, Insurance & Real Estate</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">FMCG</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Food & Beverrages</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Food Processing & Sales</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Food Products Manufacturing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Food Stores</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Foreign & Defense Policy</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Gambling</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Gas & Oil</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Gay & Lesbian Rights & Issues</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Government Contractors</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Government Service</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Health & Wellness</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Hedge Funds</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Hospitals & Nursing Homes</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Hospitality and Leisure</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Human Rights</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">HR / Human Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <div class="word_l">
+                        <div>I</div>
+                        <div>J</div>
+                        <div>L</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:">IT / Information Technology</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Ideological and Single-Issue</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Import</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Industry / Industrials</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Infrastructure</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Insurance</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Journalism</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Labor</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Lawyers / Legal Consultants</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Law Firms</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Lobbiyists</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Logistics</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4">
+                    <div class="word_l">
+                        <div>M</div>
+                        <div>N</div>
+                        <div>O</div>
+                        <div>P</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:">Manufacturing, Misc</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Mathmaticians, actuaries and statisticians</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Marine Transport</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Meat processing & Products</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Media and Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Medical Supplies</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Mining / Metals</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Motion Picture production & Distribution</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Music Production</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Newspaper, Magazine & Book Publishing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Non-Profits, Foundations</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Offset Printing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Oil & Gas</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Other</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Pharmaceuticals</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Philanthrophy</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Power Utilities</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Printing & Publishing</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Private Equity / Investment</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Production Cinema TV Ads</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab5">
+                    <div class="word_l">
+                        <div>R</div>
+                        <div>S</div>
+                        <div>T</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:">Real Estate</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Retail Services</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Research and Development</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Religion</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Retired</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Securities & Investment</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Special Trade Contractors</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Sports, Professional</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Steel Production</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Stock Brokers / Brokerage Firm</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Teachers / Educationists</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Tea Plantations</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Telecommunications</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Telephone Utilities</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Textiles</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Tobacco</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Transportaion</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Travel</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Trade Unions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab6">
+                    <div class="word_l">
+                        <div>V</div>
+                        <div>W</div>
+                    </div>
+                    <div class="w_list style-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:">Venture Capital</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:">Waste Management</a>
+                            </li>
+                            <li>
+                                <a href="javascript:">Wine / Liquor / Alcohol</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

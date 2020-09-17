@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSOBS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DSOBS">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="DSOBS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header prfl_header f_steps">
+        <div class="top_bar">
+            <a class="navbar-brand black" href="events.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="dropdown event_l_p">
+                <a href="javascript:" class="navlink">About Event <i class="fa fa-angle-down"></i></a>
+                <div class="alllinks style-5">
+                    <div class="close"><i class="fas fa-times"></i></div>
+                    <a href="javascript:" class="active">About Event</a>
+                    <a href="javascript:">Basic Event Details</a>
+                    <a href="javascript:">Organizers</a>
+                    <a href="javascript:">Event Media</a>
+                </div>
+            </div>
+            <div class="progress_prof">
+                <span class="fl_prog"></span>
+                <span class="fill" style="width: 14%;"></span>
+            </div>
+        </div>
+    </header>
+    <div class="inner_wrap post_job style-5">
+        <div class="cont_ar">
+            <form action="javascript:" class="style-5">
+                <div class="fields style-5">
+                    <div class="field">
+                        <label>Event Video</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Paste Youtube, Vimeo,Soundcloud URL for Project(Required)" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="inputbox uplgrp">
+                            <label for="group_img">
+                                <input type="file" id="group_img" placeholder="Upload a Photo here" />
+                                <span class="img"><i class="fas fa-upload"></i> Click to Upload Image</span>
+                            </label>
+                            <button type="button" class="btn btn_default bl">Add</button>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Event Type</label>
+                        <div class="inputbox radio">
+                            <label class="radio">
+                                Free
+                                <input type="radio" name="type" alt="" />
+                                <span></span>
+                            </label>
+                            <label class="radio">   
+                                Paid
+                                <input type="radio" name="type" alt="" />
+                                <span></span>
+                            </label>    
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>About the Event<sup>*</sup></label>
+                        <div class="inputbox">
+                            <textarea class="area" minlength="100" maxlength="10000" placeholder="Pleae Enter text here"></textarea>
+                            <div class="maxl">
+                                100 to 10000 Character: <span class="word_counter">0</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Tag<sup>*</sup></label>
+                        <div class="inputbox addtag">
+                            <label>
+                                <input type="text" placeholder="Add Tag" />
+                            </label>
+                            <button type="button" class="btn btn_default">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <div class="col-6">
+                            <!-- <button type="button" class="btn btn_default sv_drf">Previous</button> -->
+                            <a href="events.html" class="btn btn_default sv_drf">Previous</a>
+                        </div>
+                        <div class="col-6">
+                            <!-- <button type="submit" class="btn btn_default">Save & Next</button> -->
+                            <a href="event_basic_details.html" class="btn btn_default">Save & Next</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

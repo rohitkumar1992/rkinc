@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSOBS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DSOBS">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="DSOBS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header view cmn_header">
+        <div class="top_bar">
+            <a class="navbar-brand black" href="melaram_gallery.html"><i class="fas fa-arrow-left"></i></a>
+            <a class="navlink" href="javascript:">Dsobs</a>
+            <a class="navlink dropdown-toggle" data-toggle="dropdown" href="Javascript:"><i class="fas fa-ellipsis-h"></i></a>
+            <div class="dropdown-menu b_d cretgrp attendee" id="ddd">
+                <div class="drop_icon">
+                    <span></span>
+                </div>
+                <ul class="attend_list style-5">
+                    <li>
+                        <a href="melaram_tag_people.html"><span><i class="fas fa-tag"></i></span>Tag People</a>
+                    </li>
+                    <li>
+                        <a href="melaram_about_photo.html"><span><i class="fas fa-info-circle"></i></span>About the Photo</a>
+                    </li>
+                    <li>
+                        <a href="javascript:"><span><i class="fas fa-download"></i></span>Download Photo</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" data-toggle="modal" data-target="#photoreport"><span><i class="fas fa-exclamation-triangle"></i></span>Report Photo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="inner_wrap e_view mel_gal style-5">
+        <div class="cont_ar style-5">
+            <div class="it_view style-5">
+                <div class="mel_gal_det">
+                    <div class="img">
+                        <img src="images/gal1.jpg" alt="" />
+                    </div>
+                    <div class="p_inf">
+                        <a href="javascript:">People in the image</a>
+                        <a href="melaram_tag_people.html">Tag People</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--modals--->
+    <div class="modal" id="photoreport">
+        <div class="modal-dialog photoreport">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <form>
+                    <div class="field">
+                        <div class="inputbox">
+                            <textarea placeholder="Write text here"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons text-right">
+                        <button type="submit" class="btn btn_default">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

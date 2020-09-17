@@ -6,9 +6,16 @@
   .login_ar form input, .login_ar form select { margin-bottom: 5px; }
   .cont_ar { width: 100%; }
   .filtr_drop .dropdown .dropdown-menu.b_d { width: 100%; }
+  .dropdown-menu.b_d.cretgrp { width: 100%; }
 
   .inner_wrap.style-5::-webkit-scrollbar { display: none; }
   .cont_ar ul.nav-tabs.style-5::-webkit-scrollbar { display: none; }
+
+  .srchby_l li  { padding-right: 5px; }
+  .srchby_l li label  { font-size: 12px; line-height: 16px; padding-left: 23px; }
+
+  .cont_ar ul.jobs_l .dropdown-menu.b_d { width: 100%; }
+  .e_view .cont_ar { padding: 0px 10px; }
 }
 @media only screen and (max-width: 500px) {
   .side_btn_l { width: 100%; }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSOBS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DSOBS">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="DSOBS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header hm">
+        <div class="top_bar">
+            <a class="navbar-brand logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+            <div class="dropdown event_l_p">
+                <a href="javascript:" class="navlink">Jobs <i class="fa fa-angle-down"></i></a>
+                <div class="alllinks style-5">
+                    <div class="close"><i class="fas fa-times"></i></div>
+                    <a href="javascript:">Chat</a>
+                    <a href="javascript:">Events</a>
+                    <a href="javascript:">Directory</a>
+                    <a href="javascript:">News</a>
+                    <a href="javascript:">Ventures</a>
+                    <a href="javascript:">Common Room</a>
+                    <a href="javascript:">Store</a>
+                    <a href="javascript:">Melaram Gallery</a>
+                    <a href="javascript:" class="active">Jobs</a>
+                    <a href="javascript:">Offers</a>
+                    <a href="javascript:">Footsteps</a>
+                    <a href="javascript:">Videos</a>
+                    <a href="javascript:">The Rose Bowl</a>
+                    <a href="javascript:">Contrubutions</a>
+                    <a href="javascript:">Masters</a>
+                </div>
+            </div>
+            <a class="navlink" href="job_post.html">Post a Job</a>
+        </div>
+    </header>
+    <div class="inner_wrap style-5">
+        <div class="search_ar">
+            <div class="searchbox">
+                <div class="inputbox">
+                    <input type="text" placeholder="search" />
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="filtr_drop">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="Javascript:"><span class="icon"><i class="fas fa-sliders-h"></i></span></a>
+                    <div class="dropdown-menu b_d">
+                        <div class="drop_icon">
+                            <span></span>
+                        </div>
+                        <h3 class="text-center">Select Filter</h3>
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    Jobs
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>    
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Filter By Location
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>    
+                                <label class="radio">
+                                    Filter By Profession
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Filter By Job
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="serch_sug">
+                <div class="sug_list">
+                    <ul class="style-5">
+                        <li>
+                            <a href="javascript:" class="box">
+                                <div class="img">
+                                    <img src="images/subt_ser_team_1.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p>you go to space</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:" class="box">
+                                <div class="img">
+                                    <img src="images/special2.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p>Head of the drunk tank</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="cont_ar jobs">
+            <!-- Nav tabs -->
+            <ul class="jobs_l style-5">
+                <li class="nav-item">
+                    <a href="javascript:" class="nav-link active">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:" class="nav-link">Filter By Location</a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:" data-toggle="dropdown" class="nav-link dropdown-toggle">Filter By Profession</a>
+                    <div class="dropdown-menu b_d">
+                        <div class="drop_icon">
+                            <span></span>
+                        </div>
+                        <h3 class="text-center">Select Profession</h3>
+                        <div class="searchbox">
+                            <div class="inputbox">
+                                <input type="text" placeholder="search" />
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <ul class="style-5">
+                            <li>
+                                <label class="radio">
+                                    Academia
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>    
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Accountants / CA/ CPA
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>    
+                                <label class="radio">
+                                    Advertising / Public Relations
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Aerospace
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Agribusiness
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Agriculture
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Armed Forces
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Automotive adn Anvillary
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Aviation
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Banking, Mortage
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+
+
+                            <li>
+                                <label class="radio">
+                                    Banking, Commercial
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Banks, Savings & Loans
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Bars & Restaurants
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Books, Magazines & Newspaper
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Broadcasters, Radio / TV
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    BPO
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Business Services
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Car Dealers
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Civil Servants / Public Oficials
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:" data-toggle="dropdown" class="nav-link dropdown-toggle">Filter By Job</a>
+                    <div class="dropdown-menu b_d">
+                        <div class="drop_icon">
+                            <span></span>
+                        </div>
+                        <h3 class="text-center">Job Nature</h3>
+                        <ul class="style-5">
+                            <li>
+                                <label class="radio">
+                                    Newest
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>    
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    Oldest
+                                    <input type="radio" name="event" alt="" />
+                                    <span></span>
+                                </label>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="job-content">
+                <div class="job-pane active">
+                    <ul class="job_l">
+                        <li>
+                            <a href="jobs_detail.html" class="box">
+                                <div class="img_ar">
+                                    <div class="img">
+                                        <img src="images/subt_ser_team_1.jpg" alt="" />
+                                    </div>
+                                    <div class="txt">
+                                        <p>Space X</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="txt">You go to space</p>
+                                    <p>VND 789088</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jobs_detail.html" class="box">
+                                <div class="img_ar">
+                                    <div class="img">
+                                        <img src="images/icon_network2.png" alt="" />
+                                    </div>
+                                    <div class="txt">
+                                        <p>Soda Bottle Wala</p>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <p class="txt">Head of the drunk tank</p>
+                                    <p>USD 45000</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="scrollup">Scroll Top</button>
+    </div>
+</body>
+
+</html>
