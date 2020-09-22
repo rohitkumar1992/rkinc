@@ -162,9 +162,25 @@ $(document).ready(function() {
       $this.children('span').text('FILTER');
     }
   });
+  $('.contct .addr button.btn').click(function(){
+    var $this = $(this);
+    $this.parent('.contct .addr').toggleClass('active');
+    if($this.parent('.contct .addr').hasClass('active')){
+      $this.text('Hide Address');     
+    } else {
+      $this.text('View Address');
+    }
+  });
 
   $('.v_dirct .dir_f_tab .tab-content .lst label').click(function(e) {
       $('.v_dirct .dir_f_tab .tab-content .lst label.active').removeClass('active');
+      var $this = $(this);
+      $this.addClass('active');
+      e.preventDefault();
+  });
+
+  $('.dash_prfl form .field ul.tag_lst li').click(function(e) {
+      $('.dash_prfl form .field ul.tag_lst li.active').removeClass('active');
       var $this = $(this);
       $this.addClass('active');
       e.preventDefault();

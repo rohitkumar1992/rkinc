@@ -159,15 +159,15 @@ input[type=number] {
 /*checkbox and radio*/
 label.checkbx { position: relative; display:inline-block; margin-bottom: 0px; width: 100%; line-height: 20px; padding-left: 28px; }
 label.checkbx input[type="checkbox"] { opacity: 0; display: inline-block; height: 20px; width:20px; position: absolute; top: 0px; left:0px; z-index: 2; }
-label.checkbx span.ic { padding: 3px; display: inline-block; position: absolute; top: 0px; left: 0px; z-index: 1; width: 20px;height: 20px; border: 1px solid #ddd; background:#2196F3; }
+label.checkbx span.ic { padding: 3px; display: inline-block; position: absolute; top: 0px; left: 0px; z-index: 1; width: 20px;height: 20px; border: 1px solid #ddd; background:#999; }
 label.checkbx span svg { display:none; }
 label.checkbx input[type="checkbox"]:checked + span.ic {}
-label.checkbx input[type="checkbox"]:checked + span.ic svg { display: block; font-size: 12px; line-height: 13px; text-align: center; color: #fff; }
+label.checkbx input[type="checkbox"]:checked + span.ic svg { display: block; font-size: 12px; line-height: 13px; text-align: center; color: #000; }
 
 label.radio { position: relative; display:inline-block; margin-bottom: 0px; width: 100%; line-height: 20px; padding-left: 28px; }
 label.radio input[type="radio"] { opacity: 0; display: inline-block; height: 20px; width:20px; position: absolute; top: 0px; left:0px; z-index: 2; }
-label.radio span { display: inline-block; position: absolute; top: 0px; left: 0px; z-index: 1; width: 20px;height: 20px; border-radius: 50%; background:#2196F3; text-align: center; line-height: 20px; }
-label.radio span:after { content: ""; display: none; height: 10px; width: 10px; border-radius: 50%; background: #fff; position: absolute; top: 5px; left: 5px; }
+label.radio span { display: inline-block; position: absolute; top: 0px; left: 0px; z-index: 1; width: 20px;height: 20px; border-radius: 50%; background:#fff; text-align: center; line-height: 20px; border:2px solid #000; }
+label.radio span:after { content: ""; display: none; height: 10px; width: 10px; border-radius: 50%; background: #000; position: absolute; top: 3px; left: 3px; }
 label.radio input[type="radio"]:checked + span:after { display: block; }
 /*end checkbox and radio*/
 
@@ -178,6 +178,7 @@ label.radio input[type="radio"]:checked + span:after { display: block; }
 header { width: 100%; background: #fff; height: 94px; padding: 0px 15px; position: relative; z-index: 999; }
 header .top_bar { width: 100%; height: 100%;  display: flex; -moz-display:flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
 header .top_bar a.logo { margin-right: 10px; display: flex; -moz-display:flex; -webkit-display: flex; flex-flow: column wrap; justify-content: center; align-items: center; height: 63px; width: 63px; padding: 10px 10px; border-radius: 50%; background:#fff; box-shadow: 0px 0px 14px -6px #000; -moz-box-shadow: 0px 0px 14px -6px #000; -webkit-box-shadow: 0px 0px 14px -6px #000; }
+header .top_bar .tw_l a.share { margin-left: 10px; }
 header a.navlink { color:#000; font-size: 14px; font-weight: 400; }
 header a.navlink:after { display:none; }
 header a.navlink svg { color:#ddd; }
@@ -704,6 +705,10 @@ form .field.sml .inputbox span svg { font-size: 14px; }
 form .field.sml .inputbox span svg.fb_color { color:#475993; }
 form .field.sml .inputbox span svg.tw_color { color:#39f; }
 form .field.sml .inputbox span svg.wk_color { color:#3e3e3e; }
+form .field.sml .inputbox span svg.yt_color { color:#ff0000; }
+form .field.sml .inputbox span svg.ln_color { color:#4c99d0; }
+form .field.sml .inputbox span svg.in_color { color:#660871; }
+form .field.sml .inputbox span svg.wa_color { color:#0ed01d; }
 form .field.sml .inputbox input { position: relative; z-index: 2; padding-left: 40px; background: transparent; }
 
 form .field .inputbox.addtag { display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap;  justify-content: space-between;  align-items: center; }
@@ -983,9 +988,149 @@ ul.attend_list li a span { position: absolute; top: 0px; left: 0px; display: inl
 /*end venture detail*/
 
 
+/*===magazine Detail===*/
+.magz_view {  }
+.mag_l_lst { width: 100%; margin-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+.mag_l_lst h3 { font-size: 14px; font-weight: 500; text-transform: uppercase; margin-bottom: 5px; }
+.mag_l_lst ul { width: 100%; }
+.mag_l_lst ul li { width: 100%; }
+.mag_l_lst ul li a { color:#999; font-size: 14px; text-transform: capitalize; display: block; }
+
+form .inputbox.icns { background: #f8f8f8; border-radius: 5px; position: relative; }
+form .inputbox.icns input { background: transparent; position: relative; z-index: 2; padding: 7px 25px; }
+form .inputbox.icns span.ic_l { position:absolute; display: inline-block; top: 7px; left: 5px; z-index: 1; color:#777; }
+form .inputbox.icns span.ic_r { position: absolute; display: inline-block; top: 7px; right: 5px; z-index: 3; color:#777; }
+
+.magz_let_view .cont_ar .it_view { height: calc(100vh - 55px); }
+.magz_let_view .letter_edtr { width: 100%; }
+.magz_let_view .letter_edtr h3 { text-transform: uppercase; font-size: 14px; font-weight: 500; margin-bottom: 0px; }
+.magz_let_view .letter_edtr .let_ar { width: 100%; margin-top: 20px; }
+.magz_let_view .letter_edtr .let_ar p { font-size: 12px; }
+.magz_let_view .letter_edtr .let_ar p.dr { margin: 20px 0px 20px; }
+/*=end magazine detail=*/
+
+
+/*dashboard*/
+.inner_wrap.dashboard { height: calc(100vh - 48px); }
+.dashboard .cont_ar .tab-pane li .box { padding-bottom: 40px; }
+.dashboard .cont_ar .tab-pane li .v_buttons { position: absolute; width: 100%; padding: 0px 10px; bottom: 12px; left: 0px; display:flex; -moz-display:flex; -webkit-display:flex; flex-flow: row wrap; justify-content: space-between; align-items: center;  } 
+.dashboard .cont_ar .tab-pane li .v_buttons a { min-width: 100px; }
+.dashboard .cont_ar .tab-pane li .map_l { bottom: 60px; }
+.dashboard .cont_ar .tab-pane li .box .img { position: relative; }
+.dashboard .cont_ar .tab-pane li .box .img img { position: relative; z-index: 1; }
+.dashboard .cont_ar .tab-pane li .box .img .apprv { position: absolute; z-index: 2; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: center; align-items: center; width: 100%; height: 100%; color:#ff0000; font-weight: 500; font-size: 14px; background: rgba(255, 255, 255, 0.7); border-top-left-radius: 5px; border-top-right-radius:5px;  }
+.dashboard .cont_ar .tab-pane .searchbox { width: 100%; max-width: 100%; margin-bottom: 10px; }
+.dashboard .cont_ar .tab-pane.jobs ul.nav-tabs { margin-bottom: 10px; }
+.dashboard .cont_ar .tab-pane.jobs ul.nav-tabs li { margin-bottom: 0px; width: auto; padding: 0px; } 
+.dashboard .cont_ar .tab-pane.jobs > p { margin-bottom: 0px; }
+
+.prof_edit_btn { position: absolute; bottom: 20px; right: 15px; display: inline-block; }
+.prof_edit_btn a.btn { display: inline-block; width: 40px; height: 40px; border-radius: 50%; text-align: center; padding: 0px; margin: 0px; line-height: 40px; color:#fff; font-size: 20px; }
+/*end dashboard*/
+
+
+/*dashboard_profile*/
+.dash_profl { position: relative; height: calc(100vh - 50px); padding: 20px 0px 0px; }
+.dash_profl.prof_ar .login_ar { align-items: flex-start; display: block; position: relative; height: calc(100vh - 70px); min-height: 0px; padding-bottom: 60px; }
+
+.dash_profl.prof_ar .login_ar .bottom_ar { position: absolute; bottom: 0px; left: 0px; display: inline-block; width: 100%; padding: 12px 10px; text-align: center; background:#fff; min-height: 0px; }
+.dash_profl.prof_ar .login_ar .bottom_ar .btn { height: 35px; line-height: 21px; width: auto; min-width: 100px; }
+.dash_profl.prof_ar .login_ar .bottom_ar .btn.sv_drf { background: #f8f8f8; color: #000; }
+
+.dash_profl.prof_ar .login_ar form { position: initial; display: block; align-items: flex-start; height: 100%; overflow-y:auto; overflow-x: hidden; margin: 0 auto; }
+.dash_profl.prof_ar .login_ar form .fields { min-height: 0px; }
+.dash_profl .login_ar form input, .dash_profl .login_ar form select { height: 35px; line-height: 21px; }
+.dash_profl .login_ar form .inputbox.date svg { top: 10px; }
+.dash_profl .login_ar form.style-5::-webkit-scrollbar { display: none; }
+.dash_profl .login_ar form h2 { font-size: 18px; }
+.dash_profl .login_ar form .inputbox.upl_img.w_btn span { font-size: 14px; }
+.dash_profl .login_ar form .fields { margin-bottom: 20px; display: block; width: 100%; }
+.dash_profl .login_ar form .field { margin-bottom: 5px; }
+.dash_profl .login_ar form label { margin-bottom: 0px; }
+.dash_profl .login_ar form .row { margin-left: -5px; margin-right: -5px; }
+.dash_profl .login_ar form .row > div { padding: 0px 5px; }
+.dash_profl .login_ar form .inputbox.gndr label { padding-right: 5px; font-size: 12px; padding-left: 25px; }
+.dash_profl .login_ar form .inputbox.gndr.pf { padding: 5px 0px; }
+/*end dashboard profile*/
+
+
+/*dashboard social links*/
+.dash_prfl form .field.addl .inputbox, .dash_prfl form .field.addl .selectbox { margin-bottom: 10px; }
+.dash_prfl form button.btn, .dash_prfl form a.btn { line-height: 21px; height: 35px; } 
+.dash_prfl form .inputbox.gndr label { display: inline-block; width: auto; padding-right: 10px; }
+.dash_prfl form .field.pwe { border-top: 1px solid #ddd; padding-top: 10px; }
+.dash_prfl form .field.pwe .inputbox { margin-bottom: 7px; }
+.dash_prfl form .inputbox.pd label { width: 100%; position: relative; max-width: 100%; padding-right: 30px; }
+.dash_prfl form .inputbox.pd label span { color:#999; }
+.dash_prfl form .inputbox.pd label svg { position: absolute; right: 5px; top: 10px; }
+.dash_prfl form .field ul.tag_lst { width: 100%; margin-top: 10px; }
+.dash_prfl form .field ul.tag_lst li { display: inline-block; margin-bottom: 7px; margin-right: 5px; }
+.dash_prfl form .field ul.tag_lst li button { border: 1px solid #000; border-radius: 10px; height: 25px; padding: 5px 8px; line-height: 13px; font-size: 10px; color:#000; background:#fff; }
+.dash_prfl form .field ul.tag_lst li button:hover, .dash_prfl form .field ul.tag_lst li button:focus { box-shadow: none; outline: none; }
+.dash_prfl form .field ul.tag_lst li.active button { background: #2c3252; color:#fff; border-radius: 10px; border: 1px solid #2c3252; }
+/*end dash social links*/
+
+
+/*contact*/
+.inner_wrap.contct { height: calc(100vh - 52px); }
+.inner_wrap.contct .cont_ar { height: calc(100vh - 72px); overflow-y: auto; overflow-x: hidden; }
+.inner_wrap.contct .cont_ar.style-5::-webkit-scrollbar { display: none; }
+.contct .address { width: 100%; }
+.contct .addr { margin-bottom: 15px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.contct .addr button.btn:focus { background: #2c3252; }
+.contct .addr ul li { display: inline-block; margin-left: 5px; }
+.contct .addr ul li a { display: block; text-align: center; color:#333; line-height: 20px; }
+.contct .addr ul li a.wa svg { color:#30b50f; } 
+.contct .addr ul li a svg { font-size: 20px; }
+.contct .addr ul li a span { display: inline-block; width: 100%; text-align: center; margin-top: 3px; }
+.contct .addrs { width: 100%; margin-bottom: 15px; display: none; }
+.contct .addrs h3 { font-size: 14px; font-weight: 400; margin-bottom: 0px; }
+.contct .addrs p { font-size: 12px; margin-bottom: 0px; line-height: 20px; } 
+.contct .addr.active + .addrs { display: block; }
+
+.contct .vdo_l { height: auto; }
+.contct .vdo_l ul li .box .img span { font-size: 30px; }
+.contct .vdo_l ul li .box .info h3 { color:#000; margin-bottom: 0px; } 
+.contct .vdo_l ul li .box .info { background: #d8d6d6; }
+/*end contact*/
+
+
+/*faq*/
+.inner_wrap.faq { height: calc(100vh - 52px); padding-top: 0px; }
+.inner_wrap.faq .cont_ar { border-top: 20px solid #2c3252; padding: 0px 10px; }
+.faq_ar { height:calc(100vh - 82px); overflow-y: auto; overflow-x: hidden; }
+.faq_ar.style-5::-webkit-scrollbar { display: none; }
+.faq_ar ul { width: 100%; padding-top: 15px; }
+.faq_ar ul li { width: 100%; margin-bottom: 15px; }
+.faq_ar ul li p { margin-bottom: 0px; line-height: 20px; color:#333; font-size: 14px; }
+/*end faq*/
+
+
+/*terms conditions*/
+.inner_wrap.term_c { height: calc(100vh - 52px); padding-top: 0px; }
+.inner_wrap.term_c .cont_ar { padding: 0px 10px; }
+.term_ar { height:calc(100vh - 82px); overflow-y: auto; overflow-x: hidden; }
+.term_ar.style-5::-webkit-scrollbar { display: none; }
+.term_ar h4 { font-size: 14px; margin-bottom: 10px; }
+.term_ar h2 { font-size: 14px; text-transform: uppercase; }
+.term_ar p.ttl { text-transform: uppercase; }
+.term_ar p.ttl span { text-decoration: underline; }
+.term_ar ul { width: 100%; padding-left: 20px; }
+.term_ar ul li { position: relative; width: 100%; }
+.term_ar ul li p { position: relative; padding-left: 15px; }
+.term_ar ul li p span { position: absolute; top: 0px; left: 0px; }
+
+.term_ar table { width: 100%; }
+.term_ar table tr td { border: 0px; line-height: 18px; text-align: left; color:#000; font-size: 13px; vertical-align: top; padding: 7px 3px; }
+.term_ar table tr td.yr { width: 75px; text-align: center; }
+.term_ar table.btch tr td.yr { text-align: left; }
+/*end terms conditions*/
+
+
 /*=================modals css=======================*/
 .modal-dialog {}
 .modal-content { padding: 30px 15px 15px 15px; position: relative; }
+.modal-content h3 { text-transform: uppercase; font-size: 20px;  margin-bottom: 15px;}
 .modal-content .close { position: absolute; top: 10px; right: 10px; font-size: 30px; font-weight: 700; line-height: 20px; margin: 0px; padding: 0px; border: 0px; }
 .modal-content form input, .modal-content form select { height: 35px; line-height: 21px; }
 .modal-content form .buttons button, .modal-content form .buttons a.btn { height: 35px; line-height: 21px; }
@@ -993,6 +1138,11 @@ ul.attend_list li a span { position: absolute; top: 0px; left: 0px; display: inl
 .modal-dialog.cmnt .buttons button { margin: 0px 3px; }
 
 .modal#photoreport + .modal-backdrop.show { opacity:0.9; } 
+
+.modal-dialog.edit_brd .modal-content { padding-top: 10px; }
+.modal-dialog.edit_brd .modal-content form { margin-top: 20px; }
+.modal-dialog.edit_brd .modal-content ul.brd_l { width: 100%; }
+.modal-dialog.edit_brd .modal-content ul.brd_l li { width: 100%; font-size: 14px; margin-bottom: 10px; }
 /*==============end modals css======================*/
 
 

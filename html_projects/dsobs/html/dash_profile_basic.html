@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSOBS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DSOBS">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="DSOBS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />   
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />  
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/brands.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="header prfl_header f_steps">
+        <div class="top_bar">
+            <a class="navbar-brand black" href="dashboard_profile.html"><i class="fas fa-arrow-left"></i></a>
+            <div class="dropdown event_l_p">
+                <a href="javascript:" class="navlink">Basic Profile <i class="fa fa-angle-down"></i></a>
+                <div class="alllinks style-5">
+                    <div class="close"><i class="fas fa-times"></i></div>
+                    <a href="javascript:" class="active">Basic Profile</a>
+                    <a href="javascript:">About Me</a>
+                    <a href="javascript:">Photo/Media</a>
+                    <a href="javascript:">Social/Links</a>
+                    <a href="javascript:">Professional Details</a>
+                    <a href="javascript:">Tags</a>
+                    <a href="javascript:">Eduactional/Training</a>
+                    <a href="javascript:">Awards/Distinctions</a>
+                    <a href="javascript:">Relatives in School</a>
+                    <a href="javascript:">My Family</a>
+                    <a href="javascript:">Delete Profile</a>
+                </div>
+            </div>
+            <div class="progress_prof">
+                <span class="fl_prog"></span>
+                <span class="fill" style="width: 5%;"></span>
+            </div>
+        </div>
+    </header>
+    <div class="log_ar prof_ar dash_profl">
+    	<div class="login_ar">
+            <form class="style-5" action="JavaScript:">
+                <div class="fields">
+                    <h2 class="text-center">Choose a Profile Photo</h2>
+                    <div class="field">
+                        <div class="inputbox upl_img w_btn">
+                            <label for="gig_upload">
+                                <input type="file" id="gig_upload" />
+                                <span class="img"><img src="" id="upload_img" alt="" /></span>
+                                <span>Pick a photo of your profile</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>My name is...</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="field">
+                                <label>Prefix</label>
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Enter your text here" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="field">
+                                <label>Pet Name</label>
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Enter your text here" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="field">
+                                <label>First Name <sup>*</sup></label>
+                                <div class="inputbox">
+                                    <input type="text" placeholder="First Name" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="field">
+                                <label>Middle and Last Name <sup>*</sup></label>
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Middle and Last Name" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>School Details...</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="field">
+                                <label>Batch <sup>*</sup></label>
+                                <div class="selectbox">
+                                    <select>
+                                        <option>2020</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="field">
+                                <label>School Number <sup>*</sup></label>
+                                <div class="selectbox">
+                                    <select>
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>House <sup>*</sup></label>
+                        <div class="selectbox">
+                            <select>
+                                <option>DSOBS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Personal Info...</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="field">
+                                <label>DOB <sup>*</sup></label>
+                                <div class="inputbox date">
+                                    <input type="text" placeholder="select date" id="datepicker1" />
+                                    <i class="fas fa-calendar-week"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="field">
+                                <label>Gender <sup>*</sup></label>
+                                <div class="inputbox gndr pf">
+                                    <label class="radio">
+                                        Male
+                                        <input type="radio" name="gender" />
+                                        <span></span>
+                                    </label>
+                                    <label class="radio">
+                                        Female
+                                        <input type="radio" name="gender" />
+                                        <span></span>
+                                    </label>
+                                    <label class="checkbx">
+                                        LGBTQIA
+                                        <input type="checkbox" />
+                                        <span class="ic">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Blood Group</label>
+                        <div class="selectbox">
+                            <select>
+                                <option>Select Blood Group</option>
+                                <option>B+</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Current Professional Details...</h2>
+                    <div class="field">
+                        <label>Profession <sup>*</sup></label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Enter Profession" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Designation</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Enter your text here" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Company</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Enter your text here" />
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Linkedin Url...</h2>
+                    <div class="field">
+                        <div class="inputbox">
+                            <input type="text" placeholder="httpss://www.linkedin.com/" />
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Current Location Details...</h2>
+                    <div class="field">
+                        <label>Country <sup>*</sup></label>
+                        <div class="selectbox">
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>State <sup>*</sup></label>
+                        <div class="selectbox">
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>City <sup>*</sup></label>
+                        <div class="selectbox">
+                            <select>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Pin No./Area Code</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Pincode" />
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Contact Details...</h2>
+                    <div class="field">
+                        <label>Primary Phone Number</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Show My Phone Details to</label>
+                        <div class="inputbox gndr pf">
+                            <label class="radio">
+                                Everyone
+                                <input type="radio" name="gender" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                Batch Only
+                                <input type="radio" name="gender" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                No One
+                                <input type="radio" name="gender" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Primary Email Id</label>
+                        <div class="inputbox">
+                            <input type="email" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Show My Email Details to</label>
+                        <div class="inputbox gndr pf">
+                            <label class="radio">
+                                Everyone
+                                <input type="radio" name="email" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                Batch Only
+                                <input type="radio" name="email" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                No One
+                                <input type="radio" name="email" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <label>Secondary Phone Number</label>
+                        <div class="inputbox">
+                            <input type="text" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Show My Phone Details to</label>
+                        <div class="inputbox gndr pf">
+                            <label class="radio">
+                                Everyone
+                                <input type="radio" name="sec_phone" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                Batch Only
+                                <input type="radio" name="sec_phone" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                No One
+                                <input type="radio" name="sec_phone" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Secondary Email Id</label>
+                        <div class="inputbox">
+                            <input type="email" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Show My Email Details to</label>
+                        <div class="inputbox gndr pf">
+                            <label class="radio">
+                                Everyone
+                                <input type="radio" name="sec_email" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                Batch Only
+                                <input type="radio" name="sec_email" />
+                                <span></span>
+                            </label>
+                            <label class="radio">
+                                No One
+                                <input type="radio" name="sec_email" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <h2>Current Address Details...</h2>
+                    <div class="field">
+                        <label>Permanent Address</label>
+                        <div class="inputbox">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="inputbox gndr pf">
+                            <label class="checkbx">
+                                Set as Current Address
+                                <input type="checkbox" />
+                                <span class="ic">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Current Address</label>
+                        <div class="inputbox">
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom_ar">
+                    <div class="buttons">
+                        <!-- <button type="submit" class="btn btn_default">Start</button> -->
+                        <a href="dash_profile_about.html" class="btn btn_default">Save</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
